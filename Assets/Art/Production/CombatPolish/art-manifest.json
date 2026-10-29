@@ -1,0 +1,1152 @@
+{
+  "version": "combat-polish-v1",
+  "status": "visually-reviewed",
+  "generator": "bundled image_gen.py; requested gpt-image-2.5; gateway underlying model unverified",
+  "baselineTop": 469,
+  "pixelsPerUnit": 256,
+  "mesh": "FullRect",
+  "sources": {
+    "boss-forms-a.png": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+    "boss-forms-b.png": "301ad07bb2d61ce87ff96e59660b84aded68209b573e17eee43eb0f8fc5ac291",
+    "powered-players.png": "6f0b0492e654206a88e35e1ea10045a0d5cae7b2fa58d36df665c2ee2a012beb",
+    "solid-walls.png": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae"
+  },
+  "normals": "Derived alpha/luminance approximate normal maps; not AI-generated geometry",
+  "bindingPolicy": "Existing four callsign prefixes; roster length unrestricted. Optional original AURORA/EMBER only when included.",
+  "assets": [
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAlphaBounds": [
+        22,
+        15,
+        454,
+        502
+      ],
+      "sourceSoleBoundaryTop": 502,
+      "sourceRootX": 250.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7392197125256673,
+      "pastePosition": [
+        151,
+        109
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/ruins-form-2.png",
+      "kind": "boss-form",
+      "key": "ruins",
+      "phase": 2,
+      "frame": 0,
+      "sha256": "847aceb398b3c8924c02c93832e1be9897e22d261daa8617eb12179d13cad169",
+      "guid": "8076538431f7b05eb31c18e0378ee301",
+      "normalPath": "Bosses/ruins-form-2-normal.png",
+      "normalSha256": "8622ca2319dea47d53404e6b50a0e701d765a0ddbef07257e99cd822b236dc85",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        151,
+        109,
+        470,
+        469
+      ],
+      "clearFraction": 0.7986785888671875,
+      "solidFraction": 0.18433837890625,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 3,
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        21,
+        5,
+        461,
+        491
+      ],
+      "sourceSoleBoundaryTop": 491,
+      "sourceRootX": 249.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7392197125256673,
+      "pastePosition": [
+        151,
+        110
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/ruins-form-3.png",
+      "kind": "boss-form",
+      "key": "ruins",
+      "phase": 3,
+      "frame": 0,
+      "sha256": "3692dd4b8b85e07d5faba4feb30d55f574a42f7bed2ff596c0e795f6be9f2da6",
+      "guid": "bd6284bbe2cef369bba6d895fa8d8034",
+      "normalPath": "Bosses/ruins-form-3-normal.png",
+      "normalSha256": "bb60f461df3d47f0a85a0215b2b37fec5072435e9e1bcde356333eeb1a6e1771",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        151,
+        110,
+        476,
+        469
+      ],
+      "clearFraction": 0.7936309814453125,
+      "solidFraction": 0.1801971435546875,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 1,
+      "sourceRect": [
+        512,
+        0,
+        997,
+        512
+      ],
+      "sourceAlphaBounds": [
+        26,
+        40,
+        463,
+        499
+      ],
+      "sourceSoleBoundaryTop": 499,
+      "sourceRootX": 263.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7843137254901961,
+      "pastePosition": [
+        134,
+        109
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/factory-form-2.png",
+      "kind": "boss-form",
+      "key": "factory",
+      "phase": 2,
+      "frame": 0,
+      "sha256": "49077a0717edaec3bca4caa2f3c5a1656bc72f672e038411f8f2d162ec58ea90",
+      "guid": "0f5ac5b2deac6dcffa924652fec1e855",
+      "normalPath": "Bosses/factory-form-2-normal.png",
+      "normalSha256": "46c5cdb9c65e72dbd1199852732eb48d34401848f9b1d62d3605f7fbdc513e00",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        134,
+        109,
+        477,
+        469
+      ],
+      "clearFraction": 0.760797119140625,
+      "solidFraction": 0.22530517578125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 4,
+      "sourceRect": [
+        512,
+        512,
+        997,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        16,
+        18,
+        477,
+        483
+      ],
+      "sourceSoleBoundaryTop": 483,
+      "sourceRootX": 254.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7843137254901961,
+      "pastePosition": [
+        133,
+        104
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/factory-form-3.png",
+      "kind": "boss-form",
+      "key": "factory",
+      "phase": 3,
+      "frame": 0,
+      "sha256": "4bb5a2da1b0b59e9c0474c20b725e5a18aefb663ec370866c9af9e02cf651e01",
+      "guid": "5fd665461eb285b0f436ab55b8c5f831",
+      "normalPath": "Bosses/factory-form-3-normal.png",
+      "normalSha256": "33d118d3bd1875f7de5e81128159b266309b734fe8e027916ac4f3b6d9ed8528",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        133,
+        104,
+        495,
+        469
+      ],
+      "clearFraction": 0.7264801025390625,
+      "solidFraction": 0.25294189453125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 2,
+      "sourceRect": [
+        997,
+        0,
+        1536,
+        512
+      ],
+      "sourceAlphaBounds": [
+        2,
+        12,
+        510,
+        508
+      ],
+      "sourceSoleBoundaryTop": 508,
+      "sourceRootX": 315.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7258064516129032,
+      "pastePosition": [
+        93,
+        109
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/ice-form-2.png",
+      "kind": "boss-form",
+      "key": "ice",
+      "phase": 2,
+      "frame": 0,
+      "sha256": "d483507de3ddc525a7bd23571789b635a52de66a138ea8c0506ddb717d84f582",
+      "guid": "36712a94029fb513b92c4d9c29cf05fa",
+      "normalPath": "Bosses/ice-form-2-normal.png",
+      "normalSha256": "d4d04308fb1314788803791e524422e9c0a2657c8d9977e5c039ba314324012f",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        93,
+        109,
+        462,
+        469
+      ],
+      "clearFraction": 0.8484375,
+      "solidFraction": 0.12545166015625,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-a.png",
+      "sourceSha256": "f46c87d9efcdbf1f260a3f6b44322462d370f4e4a7ffab1f55c09136ae319264",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 5,
+      "sourceRect": [
+        997,
+        512,
+        1536,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        2,
+        6,
+        527,
+        491
+      ],
+      "sourceSoleBoundaryTop": 491,
+      "sourceRootX": 284.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7258064516129032,
+      "pastePosition": [
+        115,
+        117
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/ice-form-3.png",
+      "kind": "boss-form",
+      "key": "ice",
+      "phase": 3,
+      "frame": 0,
+      "sha256": "344b6760baef4672ca3ad9b0311f259992f6f69a486feb31a26de0b6a25699fa",
+      "guid": "2588c487edb24d7f4605f31208c8da72",
+      "normalPath": "Bosses/ice-form-3-normal.png",
+      "normalSha256": "52c07e5c2e6aadd633591924473c5ecf9bceb1e87caafb6d586e038fe6bd7e09",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        115,
+        117,
+        496,
+        469
+      ],
+      "clearFraction": 0.8531097412109375,
+      "solidFraction": 0.114337158203125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-b.png",
+      "sourceSha256": "301ad07bb2d61ce87ff96e59660b84aded68209b573e17eee43eb0f8fc5ac291",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        497,
+        512
+      ],
+      "sourceAlphaBounds": [
+        81,
+        25,
+        412,
+        498
+      ],
+      "sourceSoleBoundaryTop": 498,
+      "sourceRootX": 249.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7610993657505285,
+      "pastePosition": [
+        192,
+        109
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/neon-form-2.png",
+      "kind": "boss-form",
+      "key": "neon",
+      "phase": 2,
+      "frame": 0,
+      "sha256": "1819e4fa55d14171365c6690810a45292bbde231ca668ff77a1b06bb761d6df3",
+      "guid": "e743f71b4f5f6820335bd75990694d37",
+      "normalPath": "Bosses/neon-form-2-normal.png",
+      "normalSha256": "8c08edc982783e2bf482986f95858b3890e5f32cd474390d5648a28a55353836",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        192,
+        109,
+        444,
+        469
+      ],
+      "clearFraction": 0.8650115966796875,
+      "solidFraction": 0.11102294921875,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-b.png",
+      "sourceSha256": "301ad07bb2d61ce87ff96e59660b84aded68209b573e17eee43eb0f8fc5ac291",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 2,
+      "sourceRect": [
+        0,
+        512,
+        501,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        23,
+        6,
+        495,
+        488
+      ],
+      "sourceSoleBoundaryTop": 488,
+      "sourceRootX": 248.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.7610993657505285,
+      "pastePosition": [
+        149,
+        102
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/neon-form-3.png",
+      "kind": "boss-form",
+      "key": "neon",
+      "phase": 3,
+      "frame": 0,
+      "sha256": "6bd6837ed607a5a19ac2d6d4753b544b90ec5190c93ab55f40de6fe41138d103",
+      "guid": "66b02894c44a9936154eb09679db2894",
+      "normalPath": "Bosses/neon-form-3-normal.png",
+      "normalSha256": "b67df5f60cd3d22017084a567957c1e578aa553f829e62002fe80b99d10f1ae5",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        149,
+        102,
+        508,
+        469
+      ],
+      "clearFraction": 0.8140960693359375,
+      "solidFraction": 0.1530181884765625,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-b.png",
+      "sourceSha256": "301ad07bb2d61ce87ff96e59660b84aded68209b573e17eee43eb0f8fc5ac291",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 1,
+      "sourceRect": [
+        497,
+        0,
+        1024,
+        512
+      ],
+      "sourceAlphaBounds": [
+        2,
+        24,
+        484,
+        504
+      ],
+      "sourceSoleBoundaryTop": 504,
+      "sourceRootX": 185.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.75,
+      "pastePosition": [
+        182,
+        109
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/fortress-form-2.png",
+      "kind": "boss-form",
+      "key": "fortress",
+      "phase": 2,
+      "frame": 0,
+      "sha256": "a545246d7ec963ba9f572630aa4a19a6a3d6aaae4715a56f40ed8ebbbcdbc641",
+      "guid": "bac4786275d60827f5546e89f066652e",
+      "normalPath": "Bosses/fortress-form-2-normal.png",
+      "normalSha256": "be6cf786dd0ecd42110de4add2c4a6a1eb7229615078bb4f2fa9bd60a23c42e2",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        182,
+        109,
+        544,
+        469
+      ],
+      "clearFraction": 0.776220703125,
+      "solidFraction": 0.2098907470703125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "boss-forms-b.png",
+      "sourceSha256": "301ad07bb2d61ce87ff96e59660b84aded68209b573e17eee43eb0f8fc5ac291",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 3,
+      "sourceRect": [
+        501,
+        512,
+        1024,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        2,
+        7,
+        498,
+        489
+      ],
+      "sourceSoleBoundaryTop": 489,
+      "sourceRootX": 185.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.75,
+      "pastePosition": [
+        182,
+        107
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        320.0,
+        469
+      ],
+      "path": "Bosses/fortress-form-3.png",
+      "kind": "boss-form",
+      "key": "fortress",
+      "phase": 3,
+      "frame": 0,
+      "sha256": "f966bef3f9c9f61f9a4d782a10e3a02adbcc6f23d903cb555a12b64704003c13",
+      "guid": "73967aae5f0d2a52419e9068b7b6b1fe",
+      "normalPath": "Bosses/fortress-form-3-normal.png",
+      "normalSha256": "62505b58c77b043df1a665381c4f4df6f17be41aa28766a3347f2e66d7465b69",
+      "pixelsPerUnit": 256,
+      "width": 640,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        182,
+        107,
+        554,
+        469
+      ],
+      "clearFraction": 0.75814208984375,
+      "solidFraction": 0.2203125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "powered-players.png",
+      "sourceSha256": "6f0b0492e654206a88e35e1ea10045a0d5cae7b2fa58d36df665c2ee2a012beb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAlphaBounds": [
+        120,
+        7,
+        399,
+        506
+      ],
+      "sourceSoleBoundaryTop": 506,
+      "sourceRootX": 260.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.8617234468937875,
+      "pastePosition": [
+        135,
+        39
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        256.0,
+        469
+      ],
+      "path": "Characters/delta-powered.png",
+      "kind": "powered",
+      "key": "delta",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "3dd51e6fc5d37e82632b238fdc01c80be43509955366f68b9396e980b0e40087",
+      "guid": "2c5f74414416ec18c62505daf207d277",
+      "normalPath": "Characters/delta-powered-normal.png",
+      "normalSha256": "a649089fb1bdc16d259ac960bcee9ac4d0d8bb64d130bf814eb867941e19efd5",
+      "pixelsPerUnit": 256,
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        135,
+        39,
+        375,
+        469
+      ],
+      "clearFraction": 0.8279342651367188,
+      "solidFraction": 0.14915084838867188,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "powered-players.png",
+      "sourceSha256": "6f0b0492e654206a88e35e1ea10045a0d5cae7b2fa58d36df665c2ee2a012beb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 1,
+      "sourceRect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sourceAlphaBounds": [
+        72,
+        5,
+        372,
+        506
+      ],
+      "sourceSoleBoundaryTop": 506,
+      "sourceRootX": 222.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.8582834331337326,
+      "pastePosition": [
+        127,
+        39
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        256.0,
+        469
+      ],
+      "path": "Characters/vanguard-powered.png",
+      "kind": "powered",
+      "key": "vanguard",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "d3fdb3d5f6b47b2d24d23536109082142e15b847da36f56499089cb66a1edde3",
+      "guid": "809ea99f63b73daefcf652edb338d523",
+      "normalPath": "Characters/vanguard-powered-normal.png",
+      "normalSha256": "02f8b8d750f1bc739413b3242425af8effddb9986b36f766ec06882325c25590",
+      "pixelsPerUnit": 256,
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        127,
+        39,
+        384,
+        469
+      ],
+      "clearFraction": 0.7991180419921875,
+      "solidFraction": 0.18400192260742188,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "powered-players.png",
+      "sourceSha256": "6f0b0492e654206a88e35e1ea10045a0d5cae7b2fa58d36df665c2ee2a012beb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 2,
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        113,
+        5,
+        393,
+        500
+      ],
+      "sourceSoleBoundaryTop": 500,
+      "sourceRootX": 256.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.8686868686868687,
+      "pastePosition": [
+        131,
+        39
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        256.0,
+        469
+      ],
+      "path": "Characters/wraith-powered.png",
+      "kind": "powered",
+      "key": "wraith",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "be3b5f2f30550dca3c111d4cf669ad323547d21d55f1eaf45bdab630fc456892",
+      "guid": "27b8fefd2c58530595543349c66fb5ff",
+      "normalPath": "Characters/wraith-powered-normal.png",
+      "normalSha256": "ad78e2324a48d0b75a2583ce2623a8e901d46fcedd26cd650a6313cb912d9849",
+      "pixelsPerUnit": 256,
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        131,
+        39,
+        374,
+        469
+      ],
+      "clearFraction": 0.8209915161132812,
+      "solidFraction": 0.152587890625,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "powered-players.png",
+      "sourceSha256": "6f0b0492e654206a88e35e1ea10045a0d5cae7b2fa58d36df665c2ee2a012beb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "sourceCell": 3,
+      "sourceRect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        78,
+        6,
+        377,
+        499
+      ],
+      "sourceSoleBoundaryTop": 499,
+      "sourceRootX": 228.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 0.8722109533468559,
+      "pastePosition": [
+        125,
+        39
+      ],
+      "footBaselineTop": 469,
+      "rootAnchorPixels": [
+        256.0,
+        469
+      ],
+      "path": "Characters/havoc-powered.png",
+      "kind": "powered",
+      "key": "havoc",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "e48ceee8983c506bb30422bd936c73ab91a4a633297cf9d72860a139fe2ca379",
+      "guid": "55b4ff3c70a8a44bb2e04583845497e5",
+      "normalPath": "Characters/havoc-powered-normal.png",
+      "normalSha256": "eb55b31182184cc0fb9449df2b046531906ab1179d04ce447ab8f2560331c99e",
+      "pixelsPerUnit": 256,
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 2.0,
+      "outputAlphaBounds": [
+        125,
+        39,
+        386,
+        469
+      ],
+      "clearFraction": 0.815093994140625,
+      "solidFraction": 0.1648712158203125,
+      "alphaFootBoundaryTop": 469
+    },
+    {
+      "original": "solid-walls.png",
+      "sourceSha256": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAlphaBounds": [
+        61,
+        27,
+        456,
+        477
+      ],
+      "sourceSoleBoundaryTop": 477,
+      "sourceRootX": 255.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 1.1111111111111112,
+      "pastePosition": [
+        2,
+        2
+      ],
+      "path": "Walls/ruins.png",
+      "kind": "wall",
+      "key": "ruins",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "442b1ad9b77348ff6d0bef8851462b771373aa5ac9da9b9764de6be169d049c4",
+      "guid": "f9b921ea3e95c17632dabbccab909992",
+      "normalPath": "Walls/ruins-normal.png",
+      "normalSha256": "928384b8f4a24bb0a355a0f9a97bb37e8cccf4c4a1e6a02aa51da145f4dd5e47",
+      "pixelsPerUnit": 256,
+      "width": 443,
+      "height": 504,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 1.96875,
+      "outputAlphaBounds": [
+        2,
+        2,
+        441,
+        502
+      ],
+      "clearFraction": 0.13653301802286,
+      "solidFraction": 0.8337498656347415,
+      "alphaFootBoundaryTop": 502
+    },
+    {
+      "original": "solid-walls.png",
+      "sourceSha256": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 1,
+      "sourceRect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sourceAlphaBounds": [
+        63,
+        34,
+        453,
+        477
+      ],
+      "sourceSoleBoundaryTop": 477,
+      "sourceRootX": 258.0,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 1.1286681715575622,
+      "pastePosition": [
+        2,
+        2
+      ],
+      "path": "Walls/factory.png",
+      "kind": "wall",
+      "key": "factory",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "c771eb3043652ede3980f1093b49fd2b913532a25a232058f6a24b926777dadc",
+      "guid": "327d9c3706b4b32882c875b1f48689ce",
+      "normalPath": "Walls/factory-normal.png",
+      "normalSha256": "0fc47ad06fa1e490910b1498fb13f595843e06438319085d3b85474b1d5c439f",
+      "pixelsPerUnit": 256,
+      "width": 444,
+      "height": 504,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 1.96875,
+      "outputAlphaBounds": [
+        2,
+        2,
+        442,
+        502
+      ],
+      "clearFraction": 0.050832082082082085,
+      "solidFraction": 0.9289021164021164,
+      "alphaFootBoundaryTop": 502
+    },
+    {
+      "original": "solid-walls.png",
+      "sourceSha256": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 2,
+      "sourceRect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "sourceAlphaBounds": [
+        65,
+        36,
+        449,
+        477
+      ],
+      "sourceSoleBoundaryTop": 477,
+      "sourceRootX": 257.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 1.1337868480725624,
+      "pastePosition": [
+        2,
+        2
+      ],
+      "path": "Walls/ice.png",
+      "kind": "wall",
+      "key": "ice",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "236f4048ebcf2b965568749bfa0e8dee948af966bf9575b8240e22edff5e3143",
+      "guid": "f636ab484aad8aae89fcf47317368205",
+      "normalPath": "Walls/ice-normal.png",
+      "normalSha256": "54e0ea83e3bd8b186f771a017489eeae60deab4bea19348cd994914dee0e5f6c",
+      "pixelsPerUnit": 256,
+      "width": 439,
+      "height": 504,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 1.96875,
+      "outputAlphaBounds": [
+        2,
+        2,
+        437,
+        502
+      ],
+      "clearFraction": 0.05759843800846079,
+      "solidFraction": 0.9204044184112521,
+      "alphaFootBoundaryTop": 502
+    },
+    {
+      "original": "solid-walls.png",
+      "sourceSha256": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 3,
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        61,
+        17,
+        449,
+        461
+      ],
+      "sourceSoleBoundaryTop": 461,
+      "sourceRootX": 254.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 1.1261261261261262,
+      "pastePosition": [
+        2,
+        2
+      ],
+      "path": "Walls/neon.png",
+      "kind": "wall",
+      "key": "neon",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "ac641897c69ceb50bfab5f6720ffd3a451435a3d809587ebab68f20632ee9667",
+      "guid": "637203f6175889ce71dc8187508f7b85",
+      "normalPath": "Walls/neon-normal.png",
+      "normalSha256": "cee8e9b0a471088b0d0197aa5e5afff8c3b516db106c1585644ca9f31536452b",
+      "pixelsPerUnit": 256,
+      "width": 441,
+      "height": 504,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 1.96875,
+      "outputAlphaBounds": [
+        2,
+        2,
+        439,
+        502
+      ],
+      "clearFraction": 0.05203271784904438,
+      "solidFraction": 0.9272216823237232,
+      "alphaFootBoundaryTop": 501
+    },
+    {
+      "original": "solid-walls.png",
+      "sourceSha256": "cfe3dfdb53552a89fb922fb5a0efdfa2688088ae0c3f770802dd85628422b6ae",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCell": 4,
+      "sourceRect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sourceAlphaBounds": [
+        57,
+        16,
+        461,
+        461
+      ],
+      "sourceSoleBoundaryTop": 461,
+      "sourceRootX": 258.5,
+      "alphaDiscardAtOrBelow": 16,
+      "sourceScale": 1.1235955056179776,
+      "pastePosition": [
+        2,
+        2
+      ],
+      "path": "Walls/fortress.png",
+      "kind": "wall",
+      "key": "fortress",
+      "phase": 0,
+      "frame": 0,
+      "sha256": "b1678a86ac730f4eb4b69b24d4239b46da3f70835aecce6e2b8c1e10d21cd2b0",
+      "guid": "579887ec990a28f9840debd526351ce4",
+      "normalPath": "Walls/fortress-normal.png",
+      "normalSha256": "8c6cddd1356632f870abaa186801ce5fdd7327337fff58f590f78b7b6ecdd27f",
+      "pixelsPerUnit": 256,
+      "width": 458,
+      "height": 504,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "mesh": "FullRect",
+      "boundsHeightUnits": 1.96875,
+      "outputAlphaBounds": [
+        2,
+        2,
+        456,
+        502
+      ],
+      "clearFraction": 0.09606120468565883,
+      "solidFraction": 0.8824339779579954,
+      "alphaFootBoundaryTop": 501
+    }
+  ]
+}

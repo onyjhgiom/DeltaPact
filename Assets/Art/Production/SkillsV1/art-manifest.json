@@ -1,0 +1,23 @@
+{
+  "version": "skills-v1",
+  "status": "visually-reviewed",
+  "originalSha256": "9a84ca518ddf65641c0c4ed3750a443d0b7ce350b17f2c1699874f63bbd663fe",
+  "assets": [
+    {
+      "path": "skill-0.png",
+      "sha256": "95a00de4a0ec3e69dadc940dd0500cdc5c2e18a6add5f1043d0a593711e866a0"
+    },
+    {
+      "path": "skill-1.png",
+      "sha256": "07659a4b98d58d5a3373117492ab80b48addd05774cc7a37be03471635c67c6b"
+    },
+    {
+      "path": "skill-2.png",
+      "sha256": "5856c4be10dcc3f2814ec4e209acf11f38dc16e1ffcf37c7b57611fe73948bac"
+    },
+    {
+      "path": "skill-3.png",
+      "sha256": "e3f317a1426b19dc50dd5303cd492e8b9811a70742182347486d72cd86c20dba"
+    }
+  ]
+}

@@ -1,0 +1,1812 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79a9481ac4480441837bfa83e2fa287, type: 3}
+  m_Name: MoriEchoesConfig
+  m_EditorClassIdentifier: Assembly-CSharp::MoriEchoes.GameConfig
+  sideScroller: 1
+  gravityScale: 3.2
+  jumpVelocity: 13
+  allowDoubleJump: 0
+  coyoteTime: 0.09
+  jumpBuffer: 0.12
+  jumpCutMultiplier: 0.45
+  iceFrictionFactor: 0.3
+  defaultView: 0
+  viewTacticalSize: 6.2
+  viewShoulderSize: 4.3
+  viewIronSightSize: 2.8
+  characters:
+  - name: "DELTA / \u5951\u7EA6\u6267\u884C\u8005"
+    role: "\u5747\u8861 \xB7 \u7CBE\u51C6\u7A81\u51FB"
+    health: 1
+    speed: 1
+    build: 1
+    dodgeExtra: 0
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 0
+    isMale: 0
+    passiveDescription: 
+    accent: {r: 0.15, g: 0.85, b: 1, a: 1}
+    hair: {r: 0.9, g: 0.94, b: 1, a: 1}
+    portrait: {fileID: 21300000, guid: ec73a2f6cbd62674c8ed938c8a544edb, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: d89fd3fbe691ac74ea06641c243e599c, type: 3}
+      - {fileID: 21300000, guid: fe63eabdad6b1c145bdca04f8c5cc6d7, type: 3}
+      - {fileID: 21300000, guid: e07a8b81c80690545bc86bba1b3faf88, type: 3}
+      - {fileID: 21300000, guid: f46228cbbe059f34c91060ad9d245de5, type: 3}
+      - {fileID: 21300000, guid: 7c6e379440ae4a7448e09046fda296c8, type: 3}
+      - {fileID: 21300000, guid: d7101d0249c62e94b9644820f6327547, type: 3}
+      - {fileID: 21300000, guid: ccd70e86aa376f74a9c2121a0c174ec9, type: 3}
+      - {fileID: 21300000, guid: a4b118026b4151643a29e38f2c3a358c, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: 2c5f74414416ec18c62505daf207d277, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: 71695881ee434fa45b19607d0423cb84, type: 3}
+    ultimateSprite: {fileID: 0}
+  - name: "VANGUARD / \u91CD\u88C5\u58C1\u5792"
+    role: "\u751F\u547D +40% \xB7 \u91CD\u7532"
+    health: 1.4
+    speed: 0.85
+    build: 1.15
+    dodgeExtra: 0.5
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 0
+    isMale: 0
+    passiveDescription: 
+    accent: {r: 1, g: 0.4, b: 0.18, a: 1}
+    hair: {r: 0.6, g: 0.27, b: 0.2, a: 1}
+    portrait: {fileID: 21300000, guid: 05d10bec72b4693489ddc2e36cf517fe, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: cb971b4f9f7b785439e3e6709e9be7f2, type: 3}
+      - {fileID: 21300000, guid: a640ee4d3c534bf46822bf4ab458f06a, type: 3}
+      - {fileID: 21300000, guid: 45c83f28014d0844e872b75ab3357180, type: 3}
+      - {fileID: 21300000, guid: ef84ab436605328409b01c65a45b664c, type: 3}
+      - {fileID: 21300000, guid: 233fa09833185674bbf4156de11077d4, type: 3}
+      - {fileID: 21300000, guid: 9ff48a10fc76d074d8943e71f458c010, type: 3}
+      - {fileID: 21300000, guid: 0c58ec561b7c0a141960adca2cc28397, type: 3}
+      - {fileID: 21300000, guid: 05005338041bcb24d87bbbeb1a791758, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: 809ea99f63b73daefcf652edb338d523, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: c82dfe877a0f7c3419ea617de23e4654, type: 3}
+    ultimateSprite: {fileID: 0}
+  - name: "WRAITH / \u5E7D\u5F71\u4FA6\u5BDF"
+    role: "\u4E8C\u6BB5\u8DF3 \xB7 \u79FB\u901F +20%"
+    health: 0.75
+    speed: 1.2
+    build: 0.92
+    dodgeExtra: 0
+    magazine: 1
+    reload: 1
+    unlockAfter: 2
+    doubleJump: 1
+    isMale: 0
+    passiveDescription: 
+    accent: {r: 0.65, g: 0.42, b: 1, a: 1}
+    hair: {r: 0.72, g: 0.8, b: 1, a: 1}
+    portrait: {fileID: 21300000, guid: 75202a5b68e94684094940f9167a9d81, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: 8e72678af9af98e4e9ebf80fc4bab6ee, type: 3}
+      - {fileID: 21300000, guid: 39c4ac84aa5c9c6419f1b2c86edf391f, type: 3}
+      - {fileID: 21300000, guid: b70e8f51c4fb52d4ea6f04da67cdef4e, type: 3}
+      - {fileID: 21300000, guid: 78f5dd3d3ccfaa449922ab679647e07e, type: 3}
+      - {fileID: 21300000, guid: 66c3ecb1f76c45648a6cd4999418444f, type: 3}
+      - {fileID: 21300000, guid: 0c9c99458b9a28346a47829d5d6e3ad9, type: 3}
+      - {fileID: 21300000, guid: 9fbe91836518ec14589eff09a0da018e, type: 3}
+      - {fileID: 21300000, guid: 2a817466d551e064fbd3ce1359fc5459, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: 27b8fefd2c58530595543349c66fb5ff, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: 26553a38be8e4e646a32d1ccf075101a, type: 3}
+    ultimateSprite: {fileID: 0}
+  - name: "HAVOC / \u7206\u7834\u4E13\u5BB6"
+    role: "\u8702\u7FA4\u7206\u7834 \xB7 \u5F39\u5323 +30%"
+    health: 1
+    speed: 1
+    build: 1.08
+    dodgeExtra: 0
+    magazine: 1.3
+    reload: 1.2
+    unlockAfter: 4
+    doubleJump: 0
+    isMale: 0
+    passiveDescription: 
+    accent: {r: 1, g: 0.8, b: 0.16, a: 1}
+    hair: {r: 0.92, g: 0.7, b: 0.4, a: 1}
+    portrait: {fileID: 21300000, guid: 3ed9471da9a3a9148ad744b23ffeef0a, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: 0a1bbd813cb3a7444af099a17f13e18f, type: 3}
+      - {fileID: 21300000, guid: 196df47d581d0eb4eb88a5516dd58cee, type: 3}
+      - {fileID: 21300000, guid: e0ae4e78520d88d4abc7a18aa1aa2943, type: 3}
+      - {fileID: 21300000, guid: e0fa26874c8fbd74e8107a259146835b, type: 3}
+      - {fileID: 21300000, guid: 3ba8c2b3cb23dc24e988ead83530d543, type: 3}
+      - {fileID: 21300000, guid: 99d9e10dcce268b4e9db56a61484ee1b, type: 3}
+      - {fileID: 21300000, guid: 515ccba5b316b3f42a298ae4758ee105, type: 3}
+      - {fileID: 21300000, guid: 8077ea40774f8104ea6d9a2c8eb68190, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: 55b4ff3c70a8a44bb2e04583845497e5, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: ad9d3f97e2e15ea4996f3a080654c36c, type: 3}
+    ultimateSprite: {fileID: 0}
+  - name: "KALT / \u51B7\u950B\u6E38\u9A91\u5175"
+    role: "\u51B7\u5CFB\u7537\u6027 \xB7 \u7AD9\u5B9A\u7CBE\u786E\u67B6\u67AA \xB7 \u8D2F\u7A7F\u4E13\u7CBE"
+    health: 1.05
+    speed: 0.94
+    build: 1.08
+    dodgeExtra: 0
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 0
+    isMale: 1
+    passiveDescription: "\u7AD9\u5B9A\u7784\u51C6\u65F6\u4F24\u5BB3 +28% \xB7 \u540E\u5750\u529B\u964D\u4F4E"
+    accent: {r: 0.42, g: 0.86, b: 1, a: 1}
+    hair: {r: 0.72, g: 0.84, b: 0.96, a: 1}
+    portrait: {fileID: 21300000, guid: 8dc2491c0a4a4bb4b8ae4a962e35b2fd, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: 1af1712e5d2a0204eaadf56bd5ab4d50, type: 3}
+      - {fileID: 21300000, guid: 737bb21fe3b5df746be1187d70645264, type: 3}
+      - {fileID: 21300000, guid: e660eb387e4d5e147a55af242f9f0792, type: 3}
+      - {fileID: 21300000, guid: 4888b4a75267e6d41af4e3870d27c349, type: 3}
+      - {fileID: 21300000, guid: 96da880ee98d1c747926b617903c3acb, type: 3}
+      - {fileID: 21300000, guid: 3abc86ff0a86584489a1557d8cc8311e, type: 3}
+      - {fileID: 21300000, guid: 2f3858860b6f3cd4eb2fbe7b8cf6046f, type: 3}
+      - {fileID: 21300000, guid: 26d900c0079c2864ab3dd5ba8df56bc7, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: cd45ab733e3e83d429d941e5ed0e7bfa, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: b9c5c12ae5f21314fb23f9e6e0737883, type: 3}
+    ultimateSprite: {fileID: 21300000, guid: 847e61e61221c3546aa9a21933cbfe0a, type: 3}
+  - name: "VEIL / \u5F71\u7F1D\u730E\u624B"
+    role: "\u9690\u8EAB\u5C04\u624B \xB7 \u7A7A\u4E2D\u51B2\u523A \xB7 \u6807\u8BB0\u5904\u51B3"
+    health: 0.82
+    speed: 1.16
+    build: 0.91
+    dodgeExtra: 0
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 1
+    isMale: 0
+    passiveDescription: "\u7A7A\u4E2D\u95EA\u907F\u989D\u5916\u83B7\u5F97\u77ED\u6682\u65E0\u654C\u4E0E\u8FFD\u8E2A\u6B8B\u5F71"
+    accent: {r: 0.72, g: 0.49, b: 1, a: 1}
+    hair: {r: 0.42, g: 0.35, b: 0.62, a: 1}
+    portrait: {fileID: 21300000, guid: 05db6448b738b8341ba71b6c0e730b46, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: 698ab262ccc45774c969e154e9ed78aa, type: 3}
+      - {fileID: 21300000, guid: 2236561aaac1f044cb630c04b3ff5211, type: 3}
+      - {fileID: 21300000, guid: c843c3b2676893e4a9fd3a648fc91aac, type: 3}
+      - {fileID: 21300000, guid: 6cdee59f098111448a12cef3e61dd2d4, type: 3}
+      - {fileID: 21300000, guid: 1565eb23264484d488fe936f64489510, type: 3}
+      - {fileID: 21300000, guid: 485a226b6926b4c48815028236182e6e, type: 3}
+      - {fileID: 21300000, guid: 96620a92eb0b1a14b884d28928c26653, type: 3}
+      - {fileID: 21300000, guid: 31e2c81506ec70a45a07cd4545b5b1b1, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: eb09f780f409256419d4e9e8b4500e49, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: 107f052643fa651428124ba612a16f1c, type: 3}
+    ultimateSprite: {fileID: 21300000, guid: 63e84dd9b8c570c4794991232074858d, type: 3}
+  - name: "SERA / \u6668\u8F89\u533B\u5E08"
+    role: "\u6218\u5730\u533B\u7597 \xB7 \u51FB\u6740\u56DE\u7597 \xB7 \u7FA4\u4F53\u51C0\u5316"
+    health: 1.08
+    speed: 0.92
+    build: 1
+    dodgeExtra: 0
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 0
+    isMale: 0
+    passiveDescription: "\u51FB\u6740\u56DE\u590D\u751F\u547D \xB7 \u6CBB\u7597\u573A\u5F3A\u5316\u80FD\u91CF\u83B7\u53D6"
+    accent: {r: 0.37, g: 1, b: 0.78, a: 1}
+    hair: {r: 0.94, g: 0.82, b: 0.63, a: 1}
+    portrait: {fileID: 21300000, guid: e6770bb7139f8644684b7f4edd93763c, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: d6fc13c3b9b0e6a4da221d2f2591e760, type: 3}
+      - {fileID: 21300000, guid: ea3db5da3df11a84da05d82e55b766e1, type: 3}
+      - {fileID: 21300000, guid: ae2805fb30f7a344394457f2e0c9961f, type: 3}
+      - {fileID: 21300000, guid: 72b4c1b41e443b84fa4b922c1b1ee46a, type: 3}
+      - {fileID: 21300000, guid: 92836fa993313454086e1f5f5b5709f7, type: 3}
+      - {fileID: 21300000, guid: c12388ff5ef5d754e94e3947aaee86b3, type: 3}
+      - {fileID: 21300000, guid: 9678a6ea84253094bbae098b69f16bf8, type: 3}
+      - {fileID: 21300000, guid: 64027d0995ccc334b9d3829f11b4a072, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: 56228330ee193864daff9489a352a72e, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: fc2180764d13e754dbabf28b83ed2254, type: 3}
+    ultimateSprite: {fileID: 21300000, guid: 06e62aa957fa1684ea8aae78b5bfc31a, type: 3}
+  - name: "ROOK / \u7834\u9635\u5148\u950B"
+    role: "\u91CD\u7532\u51B2\u950B \xB7 \u8DF3\u96F7 \xB7 \u8FD1\u6218\u7834\u969C"
+    health: 1.24
+    speed: 1.02
+    build: 1.18
+    dodgeExtra: 0.25
+    magazine: 1
+    reload: 1
+    unlockAfter: 0
+    doubleJump: 0
+    isMale: 0
+    passiveDescription: "\u95EA\u907F\u53D8\u4E3A\u91CD\u88C5\u649E\u9635 \xB7 \u8D77\u8DF3\u7559\u4E0B\u5EF6\u8FDF\u7206\u96F7"
+    accent: {r: 1, g: 0.55, b: 0.22, a: 1}
+    hair: {r: 0.44, g: 0.3, b: 0.25, a: 1}
+    portrait: {fileID: 21300000, guid: ced4f9b37a1c69c4a8afff101210dc20, type: 3}
+    bodySprite: {fileID: 0}
+    animation:
+      frames:
+      - {fileID: 21300000, guid: 71b3840e953e81c4cbd693fb4a0b0d5a, type: 3}
+      - {fileID: 21300000, guid: 41c6cc060b5261e4697e8e6bf2003b95, type: 3}
+      - {fileID: 21300000, guid: 9f9266cce8514e1438b6fa57c8f648ca, type: 3}
+      - {fileID: 21300000, guid: 8b6e57fe064b2404498a0c5014c6ca79, type: 3}
+      - {fileID: 21300000, guid: acfb673829406214c8cc7f57c0cd3ba5, type: 3}
+      - {fileID: 21300000, guid: e10b8ddce82140a46a73460043e27430, type: 3}
+      - {fileID: 21300000, guid: 8d4bca2958416a04286d1f4b28e76504, type: 3}
+      - {fileID: 21300000, guid: 0087042e815131f41965acf554995643, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    poweredAnimation:
+      frames:
+      - {fileID: 21300000, guid: e1c7eee9b9d504a42acdb738ebd42455, type: 3}
+      facesRight: 1
+      framesPerSecond: 10
+    skillSprite: {fileID: 21300000, guid: e8ce96f4bf0f81e49b7f6123243486b2, type: 3}
+    ultimateSprite: {fileID: 21300000, guid: 97b25a97c886a4b4c9f5a57eef09859f, type: 3}
+  allCharactersAvailable: 1
+  allStagesAvailable: 1
+  themes:
+  - title: "\u57CE\u5E02\u5E9F\u589F"
+    boss: "\u7834\u788E\u8005"
+    mechanic: "\u5D29\u584C\u8DF3\u53F0 / \u7206\u71C3\u6CB9\u6876"
+    sky: {r: 0.0627451, g: 0.11372549, b: 0.20784314, a: 1}
+    distance: {r: 0.16862746, g: 0.2509804, b: 0.36078432, a: 1}
+    structure: {r: 0.15686275, g: 0.21568628, b: 0.2784314, a: 1}
+    accent: {r: 0.32156864, g: 0.84313726, b: 0.98039216, a: 1}
+    danger: {r: 1, g: 0.54509807, b: 0.2784314, a: 1}
+    background: {fileID: 21300000, guid: 3cbbc72e42caa224f89d530e630baa9b, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 4abc07293e9f9164ab096ab32e3cec62, type: 3}
+      - {fileID: 21300000, guid: fa2f2b2e3eaf96e46ab6b0aeb5d5f255, type: 3}
+      - {fileID: 21300000, guid: 09e2d136518d9b34ba35cec604c0a289, type: 3}
+      - {fileID: 21300000, guid: b03a3eb0175296843aafbe79110236c0, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 4abc07293e9f9164ab096ab32e3cec62, type: 3}
+      - {fileID: 21300000, guid: fa2f2b2e3eaf96e46ab6b0aeb5d5f255, type: 3}
+      - {fileID: 21300000, guid: 09e2d136518d9b34ba35cec604c0a289, type: 3}
+      - {fileID: 21300000, guid: b03a3eb0175296843aafbe79110236c0, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: defbd7d0ed45e72498fa3442c850d02c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: f6bd7c70dd427b64782f30d9d5484dec, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: 73e1042de42470847a0f842281b25f99, type: 3}
+    - {fileID: 21300000, guid: 36c4b32d4276bc749a38f19bd1889846, type: 3}
+    - {fileID: 21300000, guid: b62ce29ab42308142ac3695a3c9b9df7, type: 3}
+    - {fileID: 21300000, guid: 731a4b7dcc92ec84092bf67a1244d5d5, type: 3}
+    - {fileID: 21300000, guid: a752d632832b0a141817cc14561d3f53, type: 3}
+    - {fileID: 21300000, guid: 68b846fa421410541af83a1017edc90f, type: 3}
+    - {fileID: 21300000, guid: 8c39cdbde151e7c4abef06a812fc238b, type: 3}
+    - {fileID: 21300000, guid: 6d2b89d4b87658a4e98e34769db58ddd, type: 3}
+    - {fileID: 21300000, guid: 196f8304fa63dfa44a74a30c291d05bd, type: 3}
+    - {fileID: 21300000, guid: ef0d34f43882e204da01854d939f55d7, type: 3}
+    - {fileID: 21300000, guid: 948f95dbb9b17314a9f72389d8cc5c72, type: 3}
+    - {fileID: 21300000, guid: a5c8826acc8bdf344b2a9554f19d6d3a, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 91f9235bef28a934c9a992ffece1b7a4, type: 3}
+    - {fileID: 21300000, guid: 929e0e068fb07ca4bbcca13a80bed99b, type: 3}
+    - {fileID: 21300000, guid: bc1683226c25e5c4db8883dca48a4c91, type: 3}
+    - {fileID: 21300000, guid: ebc3fbfabd13bf74aa034c55e4955e1b, type: 3}
+    bossTechniques:
+    - name: "\u8F68\u6795\u7A7F\u523A"
+      release: "\u4F9D\u6B21\u9876\u8D77\u4E09\u9053\u77ED\u4FC3\u5730\u523A\uFF0C\u4F4D\u7F6E\u91CA\u653E\u524D\u56FA\u5B9A\u3002"
+      visual: "\u88C2\u5F00\u7684\u6DF7\u51DD\u571F\u8F68\u6795\u5305\u88F9\u94A2\u523A\uFF0C\u94DC\u8272\u788E\u5C51\u6CBF\u659C\u9762\u98DE\u6563\u3002"
+      dodge: "\u79BB\u5F00\u4E09\u4E2A\u7EA2\u8272\u843D\u70B9\uFF0C\u53EF\u8DF3\u8FC7\u4E2D\u95F4\u4E00\u523A\u3002"
+      frames:
+      - {fileID: 21300000, guid: 22584cb5b0b64c0458ea14e03d2c6ae4, type: 3}
+      - {fileID: 21300000, guid: 8e98bccd3bb24934fad871df3b6596da, type: 3}
+    - name: "\u94A2\u7D22\u6446\u9524"
+      release: "\u94C6\u63A5\u91CD\u9524\u6CBF\u56FA\u5B9A\u62F1\u5F62\u8F68\u8FF9\u6A2A\u6446\u4E00\u6B21\u3002"
+      visual: "\u7C97\u94A2\u7D22\u3001\u78E8\u635F\u94C6\u9489\u4E0E\u5F2F\u6708\u72B6\u5C18\u5E26\uFF0C\u9524\u5934\u4FDD\u6301\u5B9E\u7269\u8F6E\u5ED3\u3002"
+      dodge: "\u4ECE\u6446\u9524\u4E0B\u65B9\u6216\u8F68\u8FF9\u5916\u4FA7\u901A\u8FC7\u3002"
+      frames:
+      - {fileID: 21300000, guid: dc4339da06b0d0c45b372c137bf92d26, type: 3}
+      - {fileID: 21300000, guid: 3d28eeaaf0e802e4098afea9487cf005, type: 3}
+    - name: "\u74E6\u783E\u6298\u8FD4"
+      release: "\u4E24\u5757\u88C5\u7532\u6B8B\u7247\u6CBF\u4E0D\u540C\u9AD8\u5EA6\u6298\u8FD4\uFF0C\u7559\u4E0B\u4E2D\u592E\u901A\u8DEF\u3002"
+      visual: "\u626D\u66F2\u94A2\u677F\u62D6\u51FA\u7EC6\u788E\u7802\u783E\uFF0C\u84DD\u8272\u6DB2\u538B\u65AD\u53E3\u70B9\u4EAE\u8FB9\u7F18\u3002"
+      dodge: "\u89C2\u5BDF\u4E24\u6761\u8DEF\u7EBF\uFF0C\u5728\u4E2D\u95F4\u9AD8\u5EA6\u6362\u4F4D\u3002"
+      frames:
+      - {fileID: 21300000, guid: 1dfd912198d439f4384824d0e3c3a165, type: 3}
+      - {fileID: 21300000, guid: 857b41953debba54995677be38207b0a, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 6092744a071314744818404af899f69f, type: 3}
+      - {fileID: 21300000, guid: bb6d76e5ab4dbaf45a7ed81dcadaf251, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: dd091fce11844d14da6183a0fd6af13e, type: 3}
+      - {fileID: 21300000, guid: 06548f4e0203ca04c976243d4c70e6ac, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 3b61f5ac2369c4e4ea42cbdf8e26d6bf, type: 3}
+      - {fileID: 21300000, guid: 311be3080a9fde14d96ab24f7cf3cfce, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7d06a699919b18849916cde626d8a1d6, type: 3}
+      - {fileID: 21300000, guid: 7c949ff28b9ccfb42a8b7a4e04fddd98, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 159b41bbbda5e9b4893f41faf1c0446d, type: 3}
+    - {fileID: 21300000, guid: 9a6475f91cd572249a2108d5cf738f58, type: 3}
+    - {fileID: 21300000, guid: 82188b9b2dbaa324c9ac81fc192b727a, type: 3}
+    - {fileID: 21300000, guid: 866dc54a6513a1b47af189920b3d3670, type: 3}
+    - {fileID: 21300000, guid: 3e012e6af4bae934d9b0e2d32ed3871d, type: 3}
+    - {fileID: 21300000, guid: bc3e46012d0c7904fb6c72582365ea2c, type: 3}
+    - {fileID: 21300000, guid: 04fcb1258075efc4c989257bb99bf775, type: 3}
+    - {fileID: 21300000, guid: fc837bd5fb74f5b4eac8c033523c248d, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 5aecd8ee32e75fd48a69c64bc74b5870, type: 3}
+    - {fileID: 21300000, guid: c5d72097d3d058c40abb0efe0b35a192, type: 3}
+    - {fileID: 21300000, guid: 4378ac53cd8d6594daabf46502e3749f, type: 3}
+    - {fileID: 21300000, guid: 38673e9a7cbf30140b425ce8a786d40f, type: 3}
+    - {fileID: 21300000, guid: 8a5b9bcc47b840144ba960b816e84549, type: 3}
+    - {fileID: 21300000, guid: 980af49ffedcf56459503c17c616d37a, type: 3}
+    guardianSprites:
+    - {fileID: 21300000, guid: 053b865e5812b984fa2fb58555840ae3, type: 3}
+    - {fileID: 21300000, guid: d8315452503a9074da147639495e5406, type: 3}
+    - {fileID: 21300000, guid: eb8c2af762e889545b2aa2238571ddc0, type: 3}
+    - {fileID: 21300000, guid: 4831e12c6dfc5c244aa5438c8aec99fb, type: 3}
+    segmentProps:
+    - {fileID: 21300000, guid: 38673e9a7cbf30140b425ce8a786d40f, type: 3}
+    - {fileID: 21300000, guid: 8a5b9bcc47b840144ba960b816e84549, type: 3}
+    - {fileID: 21300000, guid: c5d72097d3d058c40abb0efe0b35a192, type: 3}
+    hazardAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 397580228b9f9fc4fbd664198d9b3d15, type: 3}
+      - {fileID: 21300000, guid: 0e06d0ea3bc3cde46beb970024800721, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7966ec15467515a489b20ddd0eb5c5f3, type: 3}
+      - {fileID: 21300000, guid: 945560d5787992e43a4507dbb7177bf5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    stationaryAnimation:
+      frames:
+      - {fileID: 21300000, guid: 91e2339dfab197049b1066ce10cd92dc, type: 3}
+      - {fileID: 21300000, guid: 3d339cd62c4c3d84c93e021237bf9007, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+  - title: "\u5DE5\u5382\u8702\u5DE2"
+    boss: "\u7194\u6838"
+    mechanic: "\u4F20\u9001\u5E26 / \u6DB2\u538B\u51B2\u67F1 / \u7535\u78C1\u95E8"
+    sky: {r: 0.043137256, g: 0.1254902, b: 0.14509805, a: 1}
+    distance: {r: 0.09019608, g: 0.26666668, b: 0.29411766, a: 1}
+    structure: {r: 0.14117648, g: 0.23529412, b: 0.25882354, a: 1}
+    accent: {r: 0.54901963, g: 0.9529412, b: 0.7137255, a: 1}
+    danger: {r: 1, g: 0.6117647, b: 0.22352941, a: 1}
+    background: {fileID: 21300000, guid: bc004dff22c66df4db50492c4a62e86a, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 049f3720482c4ad448b218a134a15154, type: 3}
+      - {fileID: 21300000, guid: 047a2130ec583354999b89ff28f0c7c3, type: 3}
+      - {fileID: 21300000, guid: beaafbbff0c944241abf2d414cc03cb4, type: 3}
+      - {fileID: 21300000, guid: 7a2386bf5eaff8a419afcf3b6f754feb, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 049f3720482c4ad448b218a134a15154, type: 3}
+      - {fileID: 21300000, guid: 047a2130ec583354999b89ff28f0c7c3, type: 3}
+      - {fileID: 21300000, guid: beaafbbff0c944241abf2d414cc03cb4, type: 3}
+      - {fileID: 21300000, guid: 7a2386bf5eaff8a419afcf3b6f754feb, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 8ab4071b43cd6074a93f006e84b620cf, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 1b5a20b5386b8954abc05d1c382a49ce, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: 12395e9983974b44c803e073258bcc0f, type: 3}
+    - {fileID: 21300000, guid: 898119855828fcf4fb9a4fa818b5219a, type: 3}
+    - {fileID: 21300000, guid: b8161e8dbe03f2449b3d75fa0a8f80df, type: 3}
+    - {fileID: 21300000, guid: b6744a0709b84354b872f56b0bd3ad98, type: 3}
+    - {fileID: 21300000, guid: c757567c12c1ceb44b6ffc53f0d338dc, type: 3}
+    - {fileID: 21300000, guid: 412874f8c85903e459009d63ae45bb48, type: 3}
+    - {fileID: 21300000, guid: fcdf954557848634d8483c3dcff6b378, type: 3}
+    - {fileID: 21300000, guid: 7a2e0b41cfe638d4bba4c161af42efee, type: 3}
+    - {fileID: 21300000, guid: ae7781be29c4d374387aadd2fb60c3e6, type: 3}
+    - {fileID: 21300000, guid: 7a34ba63bbc4f544aacffde7d2b432e4, type: 3}
+    - {fileID: 21300000, guid: e60d74e6878ccc64ea070a3f93eeb3ab, type: 3}
+    - {fileID: 21300000, guid: 124f6fcc8fad2b64290aa8093bf5c0d4, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: f383e8507c3a3b3438c0a9ccbc37b978, type: 3}
+    - {fileID: 21300000, guid: f52ac81ee3917c94db75883fce2c2d14, type: 3}
+    - {fileID: 21300000, guid: 7a14c4e74f8f7ff4a919b980286e7bdb, type: 3}
+    - {fileID: 21300000, guid: 3c20d222276940947be53432e3467ef1, type: 3}
+    bossTechniques:
+    - name: "\u94F8\u6D41\u5206\u95F8"
+      release: "\u4E24\u9053\u7A84\u7194\u6D41\u4EA4\u66FF\u5F00\u542F\uFF0C\u4E2D\u592E\u51B7\u5374\u5E26\u59CB\u7EC8\u53EF\u901A\u884C\u3002"
+      visual: "\u94F8\u94C1\u95F8\u5634\u55B7\u51FA\u9ECF\u7A20\u7194\u6D46\uFF0C\u6697\u8272\u6C27\u5316\u58F3\u5305\u4F4F\u6A59\u7EA2\u5185\u6838\u3002"
+      dodge: "\u8FDB\u5165\u4E2D\u592E\u95F4\u9694\uFF0C\u907F\u514D\u7194\u6D41\u5E95\u5EA7\u3002"
+      frames:
+      - {fileID: 21300000, guid: 86ad59b1fabbdd44eb33902dad956b35, type: 3}
+      - {fileID: 21300000, guid: e7f11d89a977a6e40a0cf572939dbdbd, type: 3}
+    - name: "\u78C1\u8F68\u526A\u5200"
+      release: "\u4E0A\u4E0B\u4E24\u6839\u78C1\u8F68\u675F\u659C\u5411\u4EA4\u53C9\uFF0C\u968F\u540E\u7184\u706D\u3002"
+      visual: "\u94C1\u78C1\u788E\u7247\u56F4\u7ED5\u7EC6\u7A84\u7FE1\u7FE0\u675F\u82AF\uFF0C\u4EA4\u70B9\u53EA\u6709\u77ED\u4FC3\u94DC\u8272\u706B\u661F\u3002"
+      dodge: "\u6CBF\u4EA4\u53C9\u8F68\u9053\u7684\u5916\u4FA7\u79FB\u52A8\u3002"
+      frames:
+      - {fileID: 21300000, guid: fc1c25253b9b537449ba44114942585e, type: 3}
+      - {fileID: 21300000, guid: 6ae1b9b2b31707f42950fd426db4f8b1, type: 3}
+    - name: "\u7089\u5FC3\u8DF3\u706B"
+      release: "\u4E09\u679A\u7089\u6E23\u56E2\u5148\u540E\u6CBF\u4E0D\u540C\u5F27\u7EBF\u8DF3\u8DC3\u3002"
+      visual: "\u534A\u51DD\u56FA\u7194\u58F3\u3001\u77ED\u5C3E\u7130\u548C\u70DF\u7070\uFF0C\u843D\u70B9\u751F\u6210\u7194\u88C2\u82B1\u7EB9\u3002"
+      dodge: "\u8EB2\u5F00\u56FA\u5B9A\u5F27\u7EBF\u5E76\u5229\u7528\u4E24\u6B21\u843D\u5730\u4E4B\u95F4\u7684\u95F4\u9694\u3002"
+      frames:
+      - {fileID: 21300000, guid: cdad0d17e6fe28448aed363b5ac049f5, type: 3}
+      - {fileID: 21300000, guid: ded76e71a6398f24d9f0ab09b267a1f7, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 9044f7f8760723549804aa8a54fce721, type: 3}
+      - {fileID: 21300000, guid: 32f57ee8c4099a845885ae3523fe31de, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: e372ec1b8a729f74ba49f0dbac11447b, type: 3}
+      - {fileID: 21300000, guid: 650d3e2f546b75e4291fcdf9617b4580, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: bf4364b4261831f48bd0bfd0c3412b64, type: 3}
+      - {fileID: 21300000, guid: 54a75274876a917488138e7bc9cdc4ab, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 0884150604431c5489e70e2cabff9f35, type: 3}
+      - {fileID: 21300000, guid: 5fc7ec7fc5918fe4ea452b5ee91aeaa8, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 4e5931346382357439fe435c1c8a6567, type: 3}
+    - {fileID: 21300000, guid: a153b00eb1aa15c4da7660e83ddd5bf6, type: 3}
+    - {fileID: 21300000, guid: def3696feb156a5449b549a52e04d761, type: 3}
+    - {fileID: 21300000, guid: 0868ce6b3e8e52247b3db10a97a9a1f6, type: 3}
+    - {fileID: 21300000, guid: 1a7ff27147ffc0546898aa827d0a2f81, type: 3}
+    - {fileID: 21300000, guid: 236dc0f9a4a2e5841baf9f5e6533df01, type: 3}
+    - {fileID: 21300000, guid: 5ea71d3e798cce645b0879dc32349ffb, type: 3}
+    - {fileID: 21300000, guid: 71ec82f9edc7ceb41a70ba8ef5c378d4, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 2f1f73741cc33484d9b6d38dd82b90b8, type: 3}
+    - {fileID: 21300000, guid: 6ffe7e6b23855f64384ae6d694713d09, type: 3}
+    - {fileID: 21300000, guid: e6bdfdcbc8640de44983adccae09f24e, type: 3}
+    - {fileID: 21300000, guid: 60a7a65987bb9ad408997f4a14d672a0, type: 3}
+    - {fileID: 21300000, guid: 939a850a35d1a2242a2b6cca15d08130, type: 3}
+    - {fileID: 21300000, guid: ed165aed54035fa4dbed434986514cc3, type: 3}
+    guardianSprites:
+    - {fileID: 21300000, guid: 4e36bfe7e80a95d4ba49b09f55a05105, type: 3}
+    - {fileID: 21300000, guid: c0a3d1c521103474f820f0422dc75042, type: 3}
+    - {fileID: 21300000, guid: e08450eace7bae245870aa944b18b81e, type: 3}
+    - {fileID: 21300000, guid: a26e3bcf5feb71146abacf3dd9243de4, type: 3}
+    segmentProps:
+    - {fileID: 21300000, guid: 60a7a65987bb9ad408997f4a14d672a0, type: 3}
+    - {fileID: 21300000, guid: 939a850a35d1a2242a2b6cca15d08130, type: 3}
+    - {fileID: 21300000, guid: 6ffe7e6b23855f64384ae6d694713d09, type: 3}
+    hazardAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 99235b099b9c9f54185bfd497b29b6b4, type: 3}
+      - {fileID: 21300000, guid: e018fcb20abdd074bbeac66952771f93, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: dc1aaf89ad6c3f84799f0a90be56f815, type: 3}
+      - {fileID: 21300000, guid: 9597e9580660e5e42899ebab2c3eb11e, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    stationaryAnimation:
+      frames:
+      - {fileID: 21300000, guid: b41ecf7954b28c242aaecbe826b66f2a, type: 3}
+      - {fileID: 21300000, guid: b5fed23d2ea838149aa817b38ca8d52c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+  - title: "\u5BD2\u5CF0\u96A7\u9053"
+    boss: "\u971C\u7259"
+    mechanic: "\u51B0\u9762\u60EF\u6027 / \u788E\u51B0\u5E73\u53F0 / \u66B4\u98CE\u96EA"
+    sky: {r: 0.06666667, g: 0.101960786, b: 0.21960784, a: 1}
+    distance: {r: 0.21960784, g: 0.2901961, b: 0.4509804, a: 1}
+    structure: {r: 0.1882353, g: 0.29411766, b: 0.39607844, a: 1}
+    accent: {r: 0.6156863, g: 0.9098039, b: 1, a: 1}
+    danger: {r: 0.7294118, g: 0.5137255, b: 1, a: 1}
+    background: {fileID: 21300000, guid: 20792b0e88611114ea7beedde2e19f35, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 2c3c8e68ff5b5cb4fa20ae154b7d6a71, type: 3}
+      - {fileID: 21300000, guid: 97183a6233814744786490995e90e0ed, type: 3}
+      - {fileID: 21300000, guid: f0f97feef819de840bb93fbe7f40bbbf, type: 3}
+      - {fileID: 21300000, guid: 8ea05ea761f6a494c8b5459afec995e9, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 2c3c8e68ff5b5cb4fa20ae154b7d6a71, type: 3}
+      - {fileID: 21300000, guid: 97183a6233814744786490995e90e0ed, type: 3}
+      - {fileID: 21300000, guid: f0f97feef819de840bb93fbe7f40bbbf, type: 3}
+      - {fileID: 21300000, guid: 8ea05ea761f6a494c8b5459afec995e9, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 4a16fc1ecb717ea489b15181e133d4e7, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: be3af29bee74b4f41873400ab6ecbd86, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: f9b12b8de71b6ef40b4a8eb82dd20dd4, type: 3}
+    - {fileID: 21300000, guid: 7de46bfc662eb77458f97b06a51c4aec, type: 3}
+    - {fileID: 21300000, guid: a526eea688934994882cff00db7a57fe, type: 3}
+    - {fileID: 21300000, guid: ad92a50ca0be7254aba536f0a17b8c26, type: 3}
+    - {fileID: 21300000, guid: 19448b749418071479d868747d314c4e, type: 3}
+    - {fileID: 21300000, guid: 7fc0c58dfc65c9a419391d6d2954ac71, type: 3}
+    - {fileID: 21300000, guid: a925ff8c9f0b91e42aff7b79987a261d, type: 3}
+    - {fileID: 21300000, guid: 15ca77c741fb9184598f8884876804ca, type: 3}
+    - {fileID: 21300000, guid: 848861443f4e020479740e31371bd03c, type: 3}
+    - {fileID: 21300000, guid: 0ad07768213281b45a497899ca3ceae4, type: 3}
+    - {fileID: 21300000, guid: 2f106e01131ea4d418fe392bff8ea5c3, type: 3}
+    - {fileID: 21300000, guid: 6777178b66c4e5345b510279ee16f41e, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 27fae55a9256b6944b4f68ebb7156818, type: 3}
+    - {fileID: 21300000, guid: c52be45e85160c447ba286448498b55d, type: 3}
+    - {fileID: 21300000, guid: 97c82d35a2eacb340b57ba6044c8ec44, type: 3}
+    - {fileID: 21300000, guid: b6b00c8e5095af64eacd9c3142b0905a, type: 3}
+    bossTechniques:
+    - name: "\u971C\u955C\u6298\u5C04"
+      release: "\u51B0\u68F1\u6CBF\u4E24\u6BB5\u6298\u7EBF\u8DEF\u7EBF\u5C04\u5165\u6218\u533A\u3002"
+      visual: "\u900F\u660E\u51B0\u955C\u4FDD\u7559\u5207\u9762\u4E0E\u5185\u90E8\u88C2\u7EB9\uFF0C\u6298\u5C04\u5C3E\u8FF9\u7EC6\u800C\u6E05\u695A\u3002"
+      dodge: "\u7A7F\u8FC7\u6298\u7EBF\u4E4B\u95F4\u7684\u7A7A\u9699\uFF0C\u907F\u5F00\u62D0\u70B9\u3002"
+      frames:
+      - {fileID: 21300000, guid: 943d7d60e3dbcad4a88966681191e598, type: 3}
+      - {fileID: 21300000, guid: a0d7b08e7b0177b49863864824b826d3, type: 3}
+    - name: "\u96EA\u6A90\u65AD\u5760"
+      release: "\u56DB\u5757\u96EA\u6A90\u6309\u8282\u594F\u5760\u843D\uFF0C\u6700\u540E\u4E00\u5757\u5EF6\u8FDF\u3002"
+      visual: "\u5C42\u79EF\u96EA\u58F3\u5265\u843D\u6210\u7C89\u96EA\uFF0C\u6DF1\u84DD\u51B0\u82AF\u5B8C\u6574\u53EF\u8FA8\u3002"
+      dodge: "\u6A2A\u5411\u8D70\u51FA\u843D\u70B9\uFF0C\u4E0D\u8981\u63D0\u524D\u56DE\u5934\u3002"
+      frames:
+      - {fileID: 21300000, guid: e743d325477d9ea40be38d665622fff0, type: 3}
+      - {fileID: 21300000, guid: 4e7d0be7a2c27a945beed8588921729b, type: 3}
+    - name: "\u96F6\u5EA6\u82B1\u846C"
+      release: "\u51B0\u82B1\u73AF\u4ECE\u5916\u5411\u5185\u7EFD\u653E\uFF0C\u5185\u5708\u77ED\u6682\u5B89\u5168\u3002"
+      visual: "\u975E\u5BF9\u79F0\u51B0\u74E3\u4E0E\u7EC6\u5C0F\u971C\u6676\u9010\u5C42\u5C55\u5F00\uFF0C\u4E0D\u4F7F\u7528\u6574\u5C4F\u767D\u95EA\u3002"
+      dodge: "\u8FDB\u5165\u73AF\u4E2D\u5FC3\u6216\u5B8C\u5168\u79BB\u5F00\u5916\u7F18\u3002"
+      frames:
+      - {fileID: 21300000, guid: 44cddc55ba3113f4da1ff21d928c4f1a, type: 3}
+      - {fileID: 21300000, guid: 5a6dd3be0fcf80e42a3359554782a901, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: ca8b0f7048684b34ead603d77fb6398f, type: 3}
+      - {fileID: 21300000, guid: 894d7bc276001ee4c9d7332bf8dca67c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: b60e9a5e0a5987e49ac604797a29e05f, type: 3}
+      - {fileID: 21300000, guid: b0082eb671ae60542b5f7daf2f865f0e, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: bf4ae3abd46dfa44698fff64fce5157f, type: 3}
+      - {fileID: 21300000, guid: 5534428273343a34c8aefbf310e1dc55, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: de27744c5dad46946adb1af72ee778d9, type: 3}
+      - {fileID: 21300000, guid: 3d5e19790743984419cb96d8e191b364, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 20a53071d4747dd44850aa6d7d293877, type: 3}
+    - {fileID: 21300000, guid: c0f819faf3c355c43952dbfe00acb0ff, type: 3}
+    - {fileID: 21300000, guid: 9338b55d9d3d9214b88b4e8fbc961579, type: 3}
+    - {fileID: 21300000, guid: 50e9c7a03f0a20248b7dad9f0c6d2416, type: 3}
+    - {fileID: 21300000, guid: 54b6ccb1432778e45a092ac4c082459a, type: 3}
+    - {fileID: 21300000, guid: 0d23f8257752c344094f9b8cc06df289, type: 3}
+    - {fileID: 21300000, guid: 326589085244d764c885242cd2897c3c, type: 3}
+    - {fileID: 21300000, guid: 48454e4a1e780fb4d8d43e4fa49cbc75, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 22a6a95051417754c9caa0ec02ba3da4, type: 3}
+    - {fileID: 21300000, guid: df6ff3784213bfb44bd843ced45b082b, type: 3}
+    - {fileID: 21300000, guid: 9d4fa7daf432c2145905bde29cc3de3d, type: 3}
+    - {fileID: 21300000, guid: a872605c2375b4d4ab28d05df58ec577, type: 3}
+    - {fileID: 21300000, guid: d4eb9e25375a3ef4c884c2b3eb98c650, type: 3}
+    - {fileID: 21300000, guid: 27b8efeb9a1a0874792d676b72d13088, type: 3}
+    guardianSprites:
+    - {fileID: 21300000, guid: 4eae981cd8f792048b11696bdad4923c, type: 3}
+    - {fileID: 21300000, guid: 6f880eaa3b403a244b6e51cd36796ef5, type: 3}
+    - {fileID: 21300000, guid: 976913eae3c513540a533027556f3f81, type: 3}
+    - {fileID: 21300000, guid: 95e7f8c0037158648af104a526712176, type: 3}
+    segmentProps:
+    - {fileID: 21300000, guid: a872605c2375b4d4ab28d05df58ec577, type: 3}
+    - {fileID: 21300000, guid: d4eb9e25375a3ef4c884c2b3eb98c650, type: 3}
+    - {fileID: 21300000, guid: df6ff3784213bfb44bd843ced45b082b, type: 3}
+    hazardAnimations:
+    - frames:
+      - {fileID: 21300000, guid: ca5f42d96f1ddbb4aac448dc39374f3c, type: 3}
+      - {fileID: 21300000, guid: 000ecab6267f1424497f60f8fb7d69cc, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: dcdf6870a351eea48b0466aff7c6ceef, type: 3}
+      - {fileID: 21300000, guid: 042ec4381894e9845ba4ab167fd1244b, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    stationaryAnimation:
+      frames:
+      - {fileID: 21300000, guid: 70be6d9b407ab4b4299b5d619450a767, type: 3}
+      - {fileID: 21300000, guid: 15ae49b5eab5e08489e92c653af16b86, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+  - title: "\u672A\u6765\u90FD\u5E02"
+    boss: "\u96F6\u70B9"
+    mechanic: "\u5347\u964D\u5E73\u53F0 / \u6FC0\u5149\u6805\u680F / \u5168\u606F\u5899"
+    sky: {r: 0.08627451, g: 0.05882353, b: 0.19215687, a: 1}
+    distance: {r: 0.2, g: 0.14509805, b: 0.33333334, a: 1}
+    structure: {r: 0.14901961, g: 0.2, b: 0.29803923, a: 1}
+    accent: {r: 0.95686275, g: 0.49803922, b: 0.8392157, a: 1}
+    danger: {r: 0.4862745, g: 0.90588236, b: 1, a: 1}
+    background: {fileID: 21300000, guid: 4c3c34a1cb60bf341a6760e885f70df8, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 2b296fe1c31322b46826a9db60677938, type: 3}
+      - {fileID: 21300000, guid: 2782a50208f83fd4587ee1cf308d4c9d, type: 3}
+      - {fileID: 21300000, guid: 593368a95a6401d428dcf5ee6c281fe6, type: 3}
+      - {fileID: 21300000, guid: 2e8e7a0d327eb0c48a77071a7f1865e5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 2b296fe1c31322b46826a9db60677938, type: 3}
+      - {fileID: 21300000, guid: 2782a50208f83fd4587ee1cf308d4c9d, type: 3}
+      - {fileID: 21300000, guid: 593368a95a6401d428dcf5ee6c281fe6, type: 3}
+      - {fileID: 21300000, guid: 2e8e7a0d327eb0c48a77071a7f1865e5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 557e08cde1be8c74eae16687730a1f67, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 877badd4c3cc4a84dbfb1f41abbc36c0, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: ac79351958432cf43be3c274e458b5df, type: 3}
+    - {fileID: 21300000, guid: eef47821ea6c9cc49af32f858f86da17, type: 3}
+    - {fileID: 21300000, guid: 873e1e60275b64a48959f7f85bd8e68f, type: 3}
+    - {fileID: 21300000, guid: 31f14c5f50bcb314d9d4376cea662aff, type: 3}
+    - {fileID: 21300000, guid: 034b7fbd577a3ab44b30928d9166c2ba, type: 3}
+    - {fileID: 21300000, guid: d544fa8286e36b84daf162090b982ab3, type: 3}
+    - {fileID: 21300000, guid: d47e9da0ff93c8841bcb10875df031f2, type: 3}
+    - {fileID: 21300000, guid: 97cc85718cf17be4ba2724b947ec750c, type: 3}
+    - {fileID: 21300000, guid: 8da0e208602ce1242bbada17d208f582, type: 3}
+    - {fileID: 21300000, guid: 43797b4a48f3b2a4b8cc0245218f7611, type: 3}
+    - {fileID: 21300000, guid: 4921c06936d35754f9d32d549fecc194, type: 3}
+    - {fileID: 21300000, guid: 6148a665e343b324ea04ef361630690f, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 961bd9386cabf724b9215bc5be0ce556, type: 3}
+    - {fileID: 21300000, guid: 2c7b1ce5fbd7d0b468372a99c69b49b9, type: 3}
+    - {fileID: 21300000, guid: 603dea08908ed6343a4fbbc5e738dae1, type: 3}
+    - {fileID: 21300000, guid: 6fb1a8d8e3387e045b60835db62eb01c, type: 3}
+    bossTechniques:
+    - name: "\u50CF\u7D20\u9519\u4F4D"
+      release: "\u4E09\u4E2A\u7A84\u5149\u95F8\u9010\u6BB5\u4EAE\u8D77\uFF0C\u6309\u987A\u5E8F\u5C01\u9501\u5C0F\u7247\u533A\u57DF\u3002"
+      visual: "\u5B9E\u4F53\u6295\u5F71\u68F1\u7247\u5206\u88C2\u91CD\u7EC4\uFF0C\u8FB9\u7F18\u626B\u63CF\u7EB9\u7406\u514B\u5236\u6E05\u6670\u3002"
+      dodge: "\u5728\u521A\u7184\u706D\u7684\u5149\u95F8\u4F4D\u7F6E\u524D\u8FDB\u3002"
+      frames:
+      - {fileID: 21300000, guid: d3d12d440730e4f4b9464e357443589f, type: 3}
+      - {fileID: 21300000, guid: a609d25642806b444a6521ac4171149e, type: 3}
+    - name: "\u76F8\u4F4D\u622A\u5E27"
+      release: "\u4E24\u679A\u955C\u95E8\u4E4B\u95F4\u91CA\u653E\u4E00\u6761\u77ED\u6682\u5B9A\u5411\u675F\u3002"
+      visual: "\u91D1\u5C5E\u955C\u6846\u3001\u8584\u819C\u5E72\u6D89\u8272\u4E0E\u7EA4\u7EC6\u5149\u675F\uFF0C\u80CC\u666F\u4FDD\u6301\u53EF\u89C1\u3002"
+      dodge: "\u79BB\u5F00\u4E24\u6247\u955C\u95E8\u8FDE\u7EBF\u3002"
+      frames:
+      - {fileID: 21300000, guid: e3072872e8a63784bb5ae1738618dfbe, type: 3}
+      - {fileID: 21300000, guid: 3701b612e001a954192e7e8cc5d7c40e, type: 3}
+    - name: "\u5149\u68F1\u56DE\u5ECA"
+      release: "\u5149\u5203\u6CBF\u4E09\u6298\u56DE\u5ECA\u5DE1\u884C\u4E00\u6B21\u3002"
+      visual: "\u68F1\u955C\u7FFC\u5203\u62D6\u51FA\u534A\u900F\u660E\u5F69\u8272\u6298\u9762\uFF0C\u4EAE\u90E8\u96C6\u4E2D\u4E8E\u5200\u53E3\u3002"
+      dodge: "\u5229\u7528\u56DE\u5ECA\u5F00\u53E3\u7A7F\u51FA\u3002"
+      frames:
+      - {fileID: 21300000, guid: 92e7a6846309d6849b27dddfd0fb2b40, type: 3}
+      - {fileID: 21300000, guid: 6bd0891bf621d6248a447d2dfb7d7a6b, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 87e3d95f842910c40952c43c8d45c22b, type: 3}
+      - {fileID: 21300000, guid: b1ecf305a4bc7934faf082b12fbcf348, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: c4fea3b9d88ca984fbf620a118913252, type: 3}
+      - {fileID: 21300000, guid: c832b67def264c946bd13fb2e06be78c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7521f5f3fdb084a45bf2eb133f577e34, type: 3}
+      - {fileID: 21300000, guid: dfa656ccf2d06c945a8db02b82bb6caf, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 5cd960887499a31419bf525757c51e05, type: 3}
+      - {fileID: 21300000, guid: c74ccf633272c0e458c0bb56ab267479, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 411f290c8c314874ab069ed94323cb0f, type: 3}
+    - {fileID: 21300000, guid: b5bccc9c04daa514c8fe745e9f741a6d, type: 3}
+    - {fileID: 21300000, guid: 6f120b8dd9b005845b4df8b53c36b146, type: 3}
+    - {fileID: 21300000, guid: 18cb8890f9368c14786c6b2779184b01, type: 3}
+    - {fileID: 21300000, guid: df8f77c1cc21388428f428f9a769ee4d, type: 3}
+    - {fileID: 21300000, guid: 6b3c7d20c7830604abc66bc9aa5a4d6d, type: 3}
+    - {fileID: 21300000, guid: e01bbf266f96085429cdfe5989109aa5, type: 3}
+    - {fileID: 21300000, guid: 03c075eea6ca6bf4ea07adf27b763186, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 1b6cdee134f5a8f4990db0768ae00816, type: 3}
+    - {fileID: 21300000, guid: 83aa1cf2a475039419623148cf30d97f, type: 3}
+    - {fileID: 21300000, guid: dcc91cc69ea8879489076a82b36edcc2, type: 3}
+    - {fileID: 21300000, guid: 2375bcdfbf4549c49ae3bf55ea168913, type: 3}
+    - {fileID: 21300000, guid: 5bacb5a2b2e938e48a15d46353e5d344, type: 3}
+    - {fileID: 21300000, guid: 2464edb079027354d9085ca7bd412f7c, type: 3}
+    guardianSprites:
+    - {fileID: 21300000, guid: 15585f09e9c26c547989ffbc54379346, type: 3}
+    - {fileID: 21300000, guid: d8ab90c23dfc28f4d837a5c55da66d99, type: 3}
+    - {fileID: 21300000, guid: b5f51088fae149142974b2f04973bb07, type: 3}
+    - {fileID: 21300000, guid: 572642c017e73074c8e280c1fd67d248, type: 3}
+    segmentProps:
+    - {fileID: 21300000, guid: 2375bcdfbf4549c49ae3bf55ea168913, type: 3}
+    - {fileID: 21300000, guid: 5bacb5a2b2e938e48a15d46353e5d344, type: 3}
+    - {fileID: 21300000, guid: 83aa1cf2a475039419623148cf30d97f, type: 3}
+    hazardAnimations:
+    - frames:
+      - {fileID: 21300000, guid: c8ce517ea0a05eb4694cb134d44d889c, type: 3}
+      - {fileID: 21300000, guid: 0247070e4baf6054490b83e15abead02, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: a716b2043b025e64c8efb8dacfc8e2c5, type: 3}
+      - {fileID: 21300000, guid: ea77e5adb3fc4924a8cf15fac601568d, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    stationaryAnimation:
+      frames:
+      - {fileID: 21300000, guid: daf1ae65346102044a80f5d9d07e3d6a, type: 3}
+      - {fileID: 21300000, guid: 7b482590df15cb24faeaccd5069369b4, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+  - title: "\u6700\u7EC8\u8981\u585E"
+    boss: "\u7EC8\u672B\u56DE\u54CD"
+    mechanic: "\u6DF7\u5408\u673A\u5173 / \u7A7A\u964D\u589E\u63F4 / \u5FC3\u6838\u51B3\u6218"
+    sky: {r: 0.1254902, g: 0.05882353, b: 0.11764706, a: 1}
+    distance: {r: 0.28627452, g: 0.13725491, b: 0.21568628, a: 1}
+    structure: {r: 0.1882353, g: 0.16862746, b: 0.24313726, a: 1}
+    accent: {r: 0.98039216, g: 0.41568628, b: 0.4117647, a: 1}
+    danger: {r: 1, g: 0.8156863, b: 0.44313726, a: 1}
+    background: {fileID: 21300000, guid: 85f96cf359e4e694d82e9be83f95442f, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 82e64e02e7ce9b546a32bdc7d6eb1a93, type: 3}
+      - {fileID: 21300000, guid: f45f4fb05e402a44d97a2e4c8b19a877, type: 3}
+      - {fileID: 21300000, guid: 405d2bd50be355d4387c540be5e9598b, type: 3}
+      - {fileID: 21300000, guid: d9a5b7ea1a6f25d418f38b667c901934, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 82e64e02e7ce9b546a32bdc7d6eb1a93, type: 3}
+      - {fileID: 21300000, guid: f45f4fb05e402a44d97a2e4c8b19a877, type: 3}
+      - {fileID: 21300000, guid: 405d2bd50be355d4387c540be5e9598b, type: 3}
+      - {fileID: 21300000, guid: d9a5b7ea1a6f25d418f38b667c901934, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: d6827a11a94c99142ac46c3acbf62189, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7d6059b8de9725c4ba7874834cfcb878, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: 5edd044a66fd0df478dc2e58e5014190, type: 3}
+    - {fileID: 21300000, guid: 7fa6c4d06eabb5c4aac4eb73f3a3cf34, type: 3}
+    - {fileID: 21300000, guid: dce7a5a2e4641cd44aee3581e01cd16d, type: 3}
+    - {fileID: 21300000, guid: 678d0669c734a854193cfed221b4d686, type: 3}
+    - {fileID: 21300000, guid: 4d1f2368092b1d34d82babdc8ef6089e, type: 3}
+    - {fileID: 21300000, guid: 08037ba37eaaf8a47ac3737c7e10d7c8, type: 3}
+    - {fileID: 21300000, guid: a98d72f9fc754ad4698b28f981b6e65a, type: 3}
+    - {fileID: 21300000, guid: 2bdcce8909c058643b0ecee1c549de51, type: 3}
+    - {fileID: 21300000, guid: 448b1fb8f2904e548a4a71b79795a6a7, type: 3}
+    - {fileID: 21300000, guid: db87f92a7bf036d49ae00e88b248462a, type: 3}
+    - {fileID: 21300000, guid: 8f5d2c1eb8952564894f2019b0d7cc2d, type: 3}
+    - {fileID: 21300000, guid: d3e3aa15f9cc4b24f9c708e843ba218e, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 9da94098a5e1ef24e8d94935a3be25b0, type: 3}
+    - {fileID: 21300000, guid: d944546d0fd1f8a44aee4bd3e2028799, type: 3}
+    - {fileID: 21300000, guid: c9ba2b49d05f6e9478a9456836ebed94, type: 3}
+    - {fileID: 21300000, guid: 079376ce5f6c27a4eb62743a01e2ff2f, type: 3}
+    bossTechniques:
+    - name: "\u7070\u70EC\u88C1\u7FFC"
+      release: "\u53CC\u7FFC\u5203\u4ECE\u4E24\u4FA7\u6CBF\u5F2F\u66F2\u8DEF\u5F84\u5408\u62E2\u3002"
+      visual: "\u9ED1\u91D1\u7FFC\u7247\u4E2D\u900F\u51FA\u6697\u7EA2\u4F59\u70EC\uFF0C\u5203\u5C16\u7EC6\u800C\u9510\u5229\u3002"
+      dodge: "\u4ECE\u4E24\u7FFC\u4E4B\u95F4\u63D0\u524D\u5411\u4E0A\u8DF3\u51FA\u3002"
+      frames:
+      - {fileID: 21300000, guid: c743991404449584b9efd751aa36df64, type: 3}
+      - {fileID: 21300000, guid: 5163c50141adfea4eadca0a74d193913, type: 3}
+    - name: "\u6838\u5FC3\u8D2F\u661F"
+      release: "\u6838\u5FC3\u9884\u70ED\u540E\u6A2A\u5411\u8D2F\u7A7F\u56FA\u5B9A\u9AD8\u5EA6\u3002"
+      visual: "\u5B9E\u4F53\u70AE\u819B\u6536\u675F\u6210\u6DF1\u7EA2\u675F\u82AF\uFF0C\u5916\u5305\u91D1\u5C5E\u5C18\u73AF\u3002"
+      dodge: "\u8DF3\u8FC7\u56FA\u5B9A\u9AD8\u5EA6\u5C04\u7EBF\u3002"
+      frames:
+      - {fileID: 21300000, guid: 976b56bf1dc35ae429e02b525f6cb251, type: 3}
+      - {fileID: 21300000, guid: 12b6094b2bb5f464fb3727e045e5d1f6, type: 3}
+    - name: "\u7EC8\u7109\u8282\u62CD"
+      release: "\u4E09\u7EC4\u9519\u4F4D\u51B2\u51FB\u6CE2\u4EA4\u66FF\u4ECE\u9AD8\u4F4E\u4E24\u4FA7\u903C\u8FD1\u3002"
+      visual: "\u6697\u7EA2\u88C5\u7532\u6CE2\u74E3\u50CF\u673A\u68B0\u5FC3\u640F\u9010\u6B21\u6253\u5F00\uFF0C\u706B\u82B1\u4E0D\u76D6\u4F4F\u8F6E\u5ED3\u3002"
+      dodge: "\u6309\u8282\u62CD\u5728\u9AD8\u4F4E\u901A\u8DEF\u4E4B\u95F4\u5207\u6362\u3002"
+      frames:
+      - {fileID: 21300000, guid: 7ce31a385c38d77478b717aab79ab5d9, type: 3}
+      - {fileID: 21300000, guid: 86fd0a6a5c193894a9a2806753925375, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: c47ad001683d1984ea7331f057a5262f, type: 3}
+      - {fileID: 21300000, guid: cd8eee7a1068a0c43acb12b6b6ee1446, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 0f6692a851a60b14e8247d274e6ed2d4, type: 3}
+      - {fileID: 21300000, guid: 207d385b3794eb3429f5394da53d28e3, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 79130d2419d347441b781a568b7817fa, type: 3}
+      - {fileID: 21300000, guid: 9f3d7a47f85becb4f84c2bd6c096d26a, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7b82a6c75e65d1442a05e5b29147c74a, type: 3}
+      - {fileID: 21300000, guid: 69b57722fe4d360488a84f7cad444873, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 040937a76efa40748ab2d48a6e250340, type: 3}
+    - {fileID: 21300000, guid: 8a4ed6793c704b946afe3e2498af859d, type: 3}
+    - {fileID: 21300000, guid: 403af6b9b20425c498f95ed13dcaf97b, type: 3}
+    - {fileID: 21300000, guid: 31bc040a775b7a544933788919fec604, type: 3}
+    - {fileID: 21300000, guid: 07c781eab6c2d6d4ea173d9017ac1eef, type: 3}
+    - {fileID: 21300000, guid: 18ad3463dd1338f4bae2148c0ad471e2, type: 3}
+    - {fileID: 21300000, guid: 4288221a77c1b4b4483e718f9b8ab716, type: 3}
+    - {fileID: 21300000, guid: 90472b7de75d61041ab6eb6a4a73d404, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 824ef981225a359408d0d1db49d41b97, type: 3}
+    - {fileID: 21300000, guid: 538e13cbbbd3667418188d857fc8ea68, type: 3}
+    - {fileID: 21300000, guid: 4d069dfdaab03e045a5bdd8375c98939, type: 3}
+    - {fileID: 21300000, guid: 9e4e270ffdab8e04fabfa3f7b468c9d3, type: 3}
+    - {fileID: 21300000, guid: 2dc9e091f8b1f1e46b99d8c8d5c265a4, type: 3}
+    - {fileID: 21300000, guid: aa5522866fae47c43a93f7b47b7c8c0d, type: 3}
+    guardianSprites:
+    - {fileID: 21300000, guid: d60598844fde7d848b01ff2aefa904cc, type: 3}
+    - {fileID: 21300000, guid: 8ba9acc716c85934a90220cffb534330, type: 3}
+    - {fileID: 21300000, guid: c78f356c153d343479e3df985cc2f372, type: 3}
+    - {fileID: 21300000, guid: 8bd257d036abcf647ba910cbfef4f3c7, type: 3}
+    segmentProps:
+    - {fileID: 21300000, guid: 9e4e270ffdab8e04fabfa3f7b468c9d3, type: 3}
+    - {fileID: 21300000, guid: 2dc9e091f8b1f1e46b99d8c8d5c265a4, type: 3}
+    - {fileID: 21300000, guid: 538e13cbbbd3667418188d857fc8ea68, type: 3}
+    hazardAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 07f4ea7a7d23db9428b33584abedc414, type: 3}
+      - {fileID: 21300000, guid: 049d47579e8829843a964b593b46d0e5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 0419f4e5b4e0bf64a9f6a3702e77a54f, type: 3}
+      - {fileID: 21300000, guid: 638cc939b5343e24e9fbce6ded8246dd, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    stationaryAnimation:
+      frames:
+      - {fileID: 21300000, guid: d0f2ddf4898be9a40a011397a747dd86, type: 3}
+      - {fileID: 21300000, guid: 8d25aa04d7323be4fadb19feed0f749c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+  - title: "\u5E9F\u589F\u5893\u7A9F"
+    boss: "\u767E\u9AB8\u738B"
+    mechanic: "\u5782\u76F4\u4E0B\u6F5C / \u5730\u5E95\u9AB7\u9AC5\u5175 / \u51FB\u7834\u586B\u5145\u9AB7\u9AC5\u95F8"
+    sky: {r: 0.10980392, g: 0.078431375, b: 0.14117648, a: 1}
+    distance: {r: 0.28627452, g: 0.1882353, b: 0.26666668, a: 1}
+    structure: {r: 0.20392157, g: 0.1882353, b: 0.25882354, a: 1}
+    accent: {r: 0.42745098, g: 0.8784314, b: 0.8156863, a: 1}
+    danger: {r: 1, g: 0.4117647, b: 0.3647059, a: 1}
+    background: {fileID: 21300000, guid: 266b48e4382b5124a9ea30953d08a1de, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: cc7e3efbce602c7458d8983d5eab82b1, type: 3}
+      - {fileID: 21300000, guid: aba623cd78c604e4fa2a9bd2e1115db5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: cc7e3efbce602c7458d8983d5eab82b1, type: 3}
+      - {fileID: 21300000, guid: aba623cd78c604e4fa2a9bd2e1115db5, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 7381ab8b732cf1347b983688b0d62920, type: 3}
+      - {fileID: 21300000, guid: 4435e0880669f934895e46a505c6e197, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 550ef3f42f6180d4e9f05f00e2c1d4a1, type: 3}
+      - {fileID: 21300000, guid: 151873450b692c140abf2d5493662a7c, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: ef1d9425dd4cb2649a9110a0419c54f0, type: 3}
+    - {fileID: 21300000, guid: a9998f5a0b9d0c9418c82a5c38bb3058, type: 3}
+    - {fileID: 21300000, guid: 90550d86e206d4040bb15d26b02d11bd, type: 3}
+    - {fileID: 21300000, guid: 25f115db1cb0e7e418de4f8980714aa1, type: 3}
+    - {fileID: 21300000, guid: b9c04208b9df6bb4bb56fafdc47f007b, type: 3}
+    - {fileID: 21300000, guid: d90309c81bf87314bac13f1f9bb27c34, type: 3}
+    - {fileID: 21300000, guid: ceaf09438ce10514d9d5587f250c1c8f, type: 3}
+    - {fileID: 21300000, guid: e3717e5240889b840858424ffa261b89, type: 3}
+    - {fileID: 21300000, guid: 32ce6a9fb0d1d1140b71af587abb2198, type: 3}
+    - {fileID: 21300000, guid: f5f0668c02af37942b3fd319eb199065, type: 3}
+    - {fileID: 21300000, guid: de8895457ec49b947a7d940b753cfe29, type: 3}
+    - {fileID: 21300000, guid: 2f6f184be99ad2f4687e9570e60ffbb6, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: fe6f7ff4044a8bb4bbcba9c02296465a, type: 3}
+    - {fileID: 21300000, guid: 14cc308c382206842a681f94f4c8afb1, type: 3}
+    - {fileID: 21300000, guid: e8f695f68f7ea184d8b2516a107b4c68, type: 3}
+    - {fileID: 21300000, guid: 85d14b8427da1d649aa17540dc0022cf, type: 3}
+    bossTechniques:
+    - name: "\u68FA\u9489\u5012\u96E8"
+      release: "\u4E09\u679A\u5DE8\u578B\u68FA\u9489\u659C\u843D\uFF0C\u547D\u4E2D\u70B9\u9884\u5148\u6807\u660E\u3002"
+      visual: "\u96D5\u523B\u9AA8\u7EB9\u7684\u94DC\u9489\u643A\u5E26\u7EC6\u957F\u5E7D\u7EFF\u706B\u4E1D\uFF0C\u788E\u9AA8\u5411\u4E24\u4FA7\u98DE\u6563\u3002"
+      dodge: "\u4ECE\u9489\u5217\u95F4\u9699\u7A7F\u8FC7\u3002"
+      frames:
+      - {fileID: 21300000, guid: 3980098284af22f43880c1c1eecf1485, type: 3}
+      - {fileID: 21300000, guid: 8200c1781d3f4f54d914a6fedc9800ea, type: 3}
+    - name: "\u51A5\u706F\u5F15\u6E21"
+      release: "\u4E00\u76CF\u9AA8\u706F\u6CBF\u9636\u68AF\u72B6\u8DEF\u5F84\u6E38\u8D70\u3002"
+      visual: "\u771F\u5B9E\u9AA8\u67B6\u706F\u7B3C\u3001\u7834\u5E03\u4E0E\u70DF\u4E1D\u5F62\u6210\u51B7\u6696\u5C42\u6B21\u3002"
+      dodge: "\u79BB\u5F00\u9AA8\u706F\u9884\u793A\u7684\u6298\u7EBF\u8DEF\u7EBF\u3002"
+      frames:
+      - {fileID: 21300000, guid: bc7eb64368e76bf4594ab9fe150f2f3b, type: 3}
+      - {fileID: 21300000, guid: 5094a6beea6c5794c868c23b6a256a45, type: 3}
+    - name: "\u9AB8\u51A0\u5408\u846C"
+      release: "\u4E24\u4FA7\u9AA8\u51A0\u54AC\u5408\u4E00\u6B21\uFF0C\u4E2D\u592E\u4FDD\u7559\u77ED\u6682\u9003\u751F\u53E3\u3002"
+      visual: "\u591A\u5C42\u988C\u9AA8\u50CF\u68FA\u76D6\u95ED\u5408\uFF0C\u7389\u8272\u88C2\u9699\u70B9\u4EAE\u7259\u6839\u3002"
+      dodge: "\u5148\u9000\u5165\u4E2D\u592E\uFF0C\u518D\u4ECE\u9876\u90E8\u51FA\u53E3\u79BB\u5F00\u3002"
+      frames:
+      - {fileID: 21300000, guid: cb0576329bb238d4c9df51f2e3a321fc, type: 3}
+      - {fileID: 21300000, guid: 666300cc4dda64d4c952095d8bcf1875, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 1286e8edf664056409c0ca7fb1ff700a, type: 3}
+      - {fileID: 21300000, guid: 41cae7d41b5651f4ab09d14e031ca9e3, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 67c422c32ad9bff4dabb4aaf6fdcc073, type: 3}
+      - {fileID: 21300000, guid: 9f021c510297dbd408b324c1cb2b7bb2, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 262a48778241e854e92f0e7e9d7b71fd, type: 3}
+      - {fileID: 21300000, guid: 2d632894e335c6d4aabe6b7e25f5f14b, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: f23aafc701a7b684594e3576f7d90da4, type: 3}
+      - {fileID: 21300000, guid: dd3ccf03fb3afb14fa1de46a35a5370d, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 346858304c23a8047a30a3bb6ad9a53d, type: 3}
+    - {fileID: 21300000, guid: 50633f14f9311e54982d59e0778652a9, type: 3}
+    - {fileID: 21300000, guid: cd366bd19d8dfa546b46bfda3a4df6bc, type: 3}
+    - {fileID: 21300000, guid: 0c51216bd5dc09a459ffb4d52e5ec221, type: 3}
+    - {fileID: 21300000, guid: eb290075863877047a8240128c00a2ff, type: 3}
+    - {fileID: 21300000, guid: f25aaa6871f77cb44bc36ed093f3ccfd, type: 3}
+    - {fileID: 21300000, guid: cbe07f766607cdb4d87840a6530d526c, type: 3}
+    - {fileID: 21300000, guid: c0d953b0a93951c4a922912ad033ffde, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 8e38c755e8d314f428a579005955c4bc, type: 3}
+    - {fileID: 21300000, guid: 3d1c43bc0b81d134992637b6fa77317b, type: 3}
+    - {fileID: 21300000, guid: 406e52e49dd584d4ca86cf0772b39612, type: 3}
+    - {fileID: 21300000, guid: e06e0414f8e60464693d19c9c0f0cded, type: 3}
+    guardianSprites: []
+    segmentProps: []
+    hazardAnimations: []
+    stationaryAnimation:
+      frames: []
+      facesRight: 1
+      framesPerSecond: 10
+  - title: "\u6C89\u6CA1\u5723\u5802"
+    boss: "\u6F6E\u6C50\u541E\u566C\u8005"
+    mechanic: "\u6C34\u538B\u55B7\u6D41 / \u6D6E\u6CE1\u9006\u6D41 / \u53CC\u4FA7\u5893\u9053"
+    sky: {r: 0.03137255, g: 0.11764706, b: 0.19215687, a: 1}
+    distance: {r: 0.10980392, g: 0.3254902, b: 0.39607844, a: 1}
+    structure: {r: 0.14117648, g: 0.26666668, b: 0.3254902, a: 1}
+    accent: {r: 0.38431373, g: 0.8392157, b: 0.9098039, a: 1}
+    danger: {r: 1, g: 0.6039216, b: 0.38039216, a: 1}
+    background: {fileID: 21300000, guid: 1361e8f1f17defe46b5a8152795d470d, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 425c93200b6cade4cb33c4f8bf3ae777, type: 3}
+      - {fileID: 21300000, guid: 7529b998f7c84904fb6587478615cf12, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 425c93200b6cade4cb33c4f8bf3ae777, type: 3}
+      - {fileID: 21300000, guid: 7529b998f7c84904fb6587478615cf12, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 72d14512d72127743904a3acef131466, type: 3}
+      - {fileID: 21300000, guid: b9379ba59e647134b8b7a9f70a1cee72, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 5df95fed3c1b77d4286447f218f83412, type: 3}
+      - {fileID: 21300000, guid: c74a1e91a09db4248b058eb8e3885147, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: a6294b3ea65490a4b9288591456b2e52, type: 3}
+    - {fileID: 21300000, guid: 9a278782626675e49bb1c2c4d53c67d9, type: 3}
+    - {fileID: 21300000, guid: 09c1b3cfb7ff522439dad964d2e5d957, type: 3}
+    - {fileID: 21300000, guid: 6e0748468b705a84daec72e313917d6f, type: 3}
+    - {fileID: 21300000, guid: 3e23ba2e28d449441bcb5318973c1ba5, type: 3}
+    - {fileID: 21300000, guid: 399c060223d847742b64dda2b05e59c4, type: 3}
+    - {fileID: 21300000, guid: 59e43e5a8f65a8f48859722026bb67f9, type: 3}
+    - {fileID: 21300000, guid: 936ef3df4efa1ca47b1e240c9fc47aac, type: 3}
+    - {fileID: 21300000, guid: a2f2a1df3cb5aa34ea6be955dc6a6e4f, type: 3}
+    - {fileID: 21300000, guid: 786f9cbea989c394599a11e15ff574d0, type: 3}
+    - {fileID: 21300000, guid: edd8265d0574e0c4c8688e72f28c6c9a, type: 3}
+    - {fileID: 21300000, guid: 826f9ffe450624f4e92a2998f4ec03d2, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 77c081e5b78815846895416e0dcc28f4, type: 3}
+    - {fileID: 21300000, guid: ae049ab31658de14b838f2e779a8e104, type: 3}
+    - {fileID: 21300000, guid: 4949c7477d7bb9d4e989833edb7370d0, type: 3}
+    - {fileID: 21300000, guid: 0a7ce5b8db48cf44b9db15a674664500, type: 3}
+    bossTechniques:
+    - name: "\u949F\u9CCD\u56DE\u65CB"
+      release: "\u949F\u5F62\u9CCD\u6CBF\u56FA\u5B9A\u534A\u5706\u822A\u8FF9\u7ED5\u8FC7\u73A9\u5BB6\u65E7\u4F4D\u7F6E\u3002"
+      visual: "\u94DC\u949F\u9CCD\u7247\u6324\u51FA\u73CD\u73E0\u6CE1\u6CAB\u5F27\uFF0C\u6C34\u819C\u4FDD\u7559\u900F\u660E\u5C42\u3002"
+      dodge: "\u5411\u534A\u5706\u5F00\u53E3\u65B9\u5411\u79FB\u52A8\u3002"
+      frames:
+      - {fileID: 21300000, guid: 3aa26ffee224e37429b5831439c2dcd9, type: 3}
+      - {fileID: 21300000, guid: ad0dc88b45b349b4d8d6f53542d46b61, type: 3}
+    - name: "\u73CA\u745A\u65AD\u6D41"
+      release: "\u4E0A\u4E0B\u4E24\u80A1\u73CA\u745A\u788E\u6D41\u53CD\u5411\u6A2A\u7A7F\u6218\u533A\u3002"
+      visual: "\u7EC6\u788E\u73CA\u745A\u4E0E\u900F\u660E\u538B\u529B\u819C\u4EA4\u7EC7\uFF0C\u6A59\u8272\u788E\u7247\u4F5C\u4E3A\u65B9\u5411\u6807\u3002"
+      dodge: "\u4FDD\u6301\u5728\u4E24\u80A1\u6C34\u6D41\u4E4B\u95F4\u3002"
+      frames:
+      - {fileID: 21300000, guid: 373aebd4c9f6283488325dc93b7e4761, type: 3}
+      - {fileID: 21300000, guid: ed8856d98b1ee6c4d9e11547b4257d8f, type: 3}
+    - name: "\u5723\u5802\u6C89\u949F"
+      release: "\u6C89\u949F\u4E0B\u5760\uFF0C\u968F\u540E\u5728\u56FA\u5B9A\u4F4D\u7F6E\u6FC0\u8D77\u7A7A\u5FC3\u6C34\u73AF\u3002"
+      visual: "\u5E03\u6EE1\u85E4\u58F6\u7684\u94DC\u949F\u51FB\u51FA\u5C42\u53E0\u8584\u6C34\u819C\u4E0E\u6C14\u6CE1\u82B1\u51A0\u3002"
+      dodge: "\u5148\u907F\u5F00\u4E0B\u5760\u70B9\uFF0C\u518D\u7A7F\u5165\u6C34\u73AF\u5185\u90E8\u3002"
+      frames:
+      - {fileID: 21300000, guid: ac3818eefa7f4474d877e2492da1b9a7, type: 3}
+      - {fileID: 21300000, guid: 57e7afef7bd6267438739329ac8ff1d7, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 6c39fd496c5891a4398774b3d8d545b0, type: 3}
+      - {fileID: 21300000, guid: b7a446f3e36aa7d45b1095bf273cc9d4, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: fb2946326f7fc014dbf7d29923d1314e, type: 3}
+      - {fileID: 21300000, guid: efd40f5f867d73442bd7728e238f85c8, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: a3fd79266fd1de848983507b4850ee18, type: 3}
+      - {fileID: 21300000, guid: cf8f938c2b5f29743b7f3999d34cc971, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 07e5ece62b4d9e04b97ee72e28a638bc, type: 3}
+      - {fileID: 21300000, guid: 036d70c3646ec1a44a05322c4620a44f, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: fee40ddae8e9ecd4ab8aeca1fbf03fea, type: 3}
+    - {fileID: 21300000, guid: 84a9a7e3fe178db4dac4f875dba4ddfb, type: 3}
+    - {fileID: 21300000, guid: 73a79cd9433841e448ad77f72f3143fa, type: 3}
+    - {fileID: 21300000, guid: 545690348ddfa4f42b975e2688f6ab87, type: 3}
+    - {fileID: 21300000, guid: 573421a9e058c4e4bb6128e93ecb1d06, type: 3}
+    - {fileID: 21300000, guid: 138f95b7f2584c34789793c2ed817d87, type: 3}
+    - {fileID: 21300000, guid: 830a5efd7421c7a46b845da3225a834e, type: 3}
+    - {fileID: 21300000, guid: 1289c8f9d42cc184bb572bf757592a64, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 00a2021c737d3d44782ace291b9b0365, type: 3}
+    - {fileID: 21300000, guid: b35d1e4378c4c7f42a6db6a437a735d4, type: 3}
+    - {fileID: 21300000, guid: 2abd7e773f9ba7f419856a0f466e5742, type: 3}
+    - {fileID: 21300000, guid: 347df419bb534654fb3effea55bee60c, type: 3}
+    guardianSprites: []
+    segmentProps: []
+    hazardAnimations: []
+    stationaryAnimation:
+      frames: []
+      facesRight: 1
+      framesPerSecond: 10
+  - title: "\u661F\u5760\u6838\u5FC3\u4E95"
+    boss: "\u5F15\u529B\u6B8B\u54CD"
+    mechanic: "\u53CD\u91CD\u529B\u8109\u51B2 / \u865A\u7A7A\u7275\u5F15 / \u6536\u7F29\u7AD6\u4E95"
+    sky: {r: 0.0627451, g: 0.05490196, b: 0.16470589, a: 1}
+    distance: {r: 0.1882353, g: 0.15686275, b: 0.34509805, a: 1}
+    structure: {r: 0.18039216, g: 0.1882353, b: 0.3019608, a: 1}
+    accent: {r: 0.8235294, g: 0.54509807, b: 1, a: 1}
+    danger: {r: 1, g: 0.39215687, b: 0.56078434, a: 1}
+    background: {fileID: 21300000, guid: e1bca682217852a4184eb16618acb0cd, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 5caa9a1dba354c149b21ce418c655e4d, type: 3}
+      - {fileID: 21300000, guid: 811bf4e29d1b3fb49977ed55175ed0cc, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 5caa9a1dba354c149b21ce418c655e4d, type: 3}
+      - {fileID: 21300000, guid: 811bf4e29d1b3fb49977ed55175ed0cc, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 2d2ebe194ef82f046925f7a3acc25107, type: 3}
+      - {fileID: 21300000, guid: b804bf557fe98674cbe9c520d3a92b59, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 29beb4d81a2da6c4fae5657870d7e4e7, type: 3}
+      - {fileID: 21300000, guid: 36a2df76eb927a840b691df854a570a1, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    bossOrnaments:
+    - {fileID: 21300000, guid: 06b66f554ef69324b9bc6a32f36f0ce9, type: 3}
+    - {fileID: 21300000, guid: 0ad548cb550e9294484c9fe007b5ed22, type: 3}
+    - {fileID: 21300000, guid: 775f916b07548384aab7c14d9efe955b, type: 3}
+    - {fileID: 21300000, guid: 323c8eb7622174d4ca38f62666d2ee72, type: 3}
+    - {fileID: 21300000, guid: 309e99e2dfd7afa4482ddc0581c4b001, type: 3}
+    - {fileID: 21300000, guid: 15b38095ca75a1342a5d759ea4e2504b, type: 3}
+    - {fileID: 21300000, guid: 49554d34804c63d4bb8e0aeaada3a1b2, type: 3}
+    - {fileID: 21300000, guid: 265e93a8f77abd24983778a07bd3248b, type: 3}
+    - {fileID: 21300000, guid: 2d51e660d7caa0847b2c9b38533c7e32, type: 3}
+    - {fileID: 21300000, guid: 82b70e751095da646915f3923a52d763, type: 3}
+    - {fileID: 21300000, guid: fc85c1ea4908a06438597a2b85a379f5, type: 3}
+    - {fileID: 21300000, guid: 6a3710c2d04feda40852419ed750eb82, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: da35281b4ddd70248b06486ea3b8338c, type: 3}
+    - {fileID: 21300000, guid: 10a0db49ebe53104fbcec50f362f5a44, type: 3}
+    - {fileID: 21300000, guid: 463e7cae3bd5afe42acdfc9cf4a4fdb5, type: 3}
+    - {fileID: 21300000, guid: 1aa41679dbffb1d4b87b99fdc58ddf1b, type: 3}
+    bossTechniques:
+    - name: "\u53CC\u661F\u5F39\u5F13"
+      release: "\u4E24\u679A\u661F\u6838\u6CBF\u4E0A\u4E0B\u4E0D\u540C\u5F27\u5EA6\u4EA4\u4F1A\u3002"
+      visual: "\u9668\u94C1\u5305\u88F9\u73AB\u7470\u91D1\u661F\u6838\uFF0C\u7D2B\u8272\u626D\u66F2\u5E26\u4FDD\u6301\u900F\u660E\u3002"
+      dodge: "\u6CBF\u4E24\u6761\u5F27\u7EBF\u5916\u4FA7\u79FB\u52A8\u3002"
+      frames:
+      - {fileID: 21300000, guid: 3ca65777321bba343918275973c3c723, type: 3}
+      - {fileID: 21300000, guid: 0b5bc0cf64b23694e8838bd3669f5cd5, type: 3}
+    - name: "\u65AD\u5C42\u661F\u8F68"
+      release: "\u4E09\u6761\u9519\u4F4D\u661F\u8F68\u4F9D\u6B21\u626B\u8FC7\u9884\u5B9A\u659C\u9762\u3002"
+      visual: "\u65AD\u88C2\u9668\u77F3\u8584\u7247\u6392\u6210\u7EC6\u5BC6\u8F68\u8FF9\uFF0C\u4EAE\u5EA6\u96C6\u4E2D\u5728\u5207\u53E3\u3002"
+      dodge: "\u8DDF\u968F\u5148\u626B\u5B8C\u7684\u659C\u9762\u7A7F\u8D8A\u3002"
+      frames:
+      - {fileID: 21300000, guid: a3b9210fd9698c14bb375e316d7401f6, type: 3}
+      - {fileID: 21300000, guid: 3abe0387e16be314bbdb8786116d76d1, type: 3}
+    - name: "\u89C6\u754C\u88C2\u74E3"
+      release: "\u56DB\u679A\u88C2\u74E3\u6CBF\u56FA\u5B9A\u5F84\u5411\u5411\u65E7\u843D\u70B9\u6536\u62E2\u3002"
+      visual: "\u534A\u900F\u660E\u7A7A\u95F4\u8936\u76B1\u5305\u88F9\u5B9E\u7269\u9ED1\u66DC\u74E3\u7247\uFF0C\u4E2D\u5FC3\u7559\u7A7A\u3002"
+      dodge: "\u5728\u88C2\u74E3\u95F4\u7684\u5BF9\u89D2\u7EBF\u65B9\u5411\u9003\u79BB\u3002"
+      frames:
+      - {fileID: 21300000, guid: fcdd00e08be480c48b41e140ba945e30, type: 3}
+      - {fileID: 21300000, guid: d0031acfaa432354bbb802f5892c1cf3, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: a7adac0c02dd8f1469009f476d74adad, type: 3}
+      - {fileID: 21300000, guid: a437a2fa815bd0e4a885e331519e362f, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 5417b1e74aa66e844a65c6568f84814a, type: 3}
+      - {fileID: 21300000, guid: f4c1a35d8f42c3644bc755aaae58a203, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: 55f50c0c53f86074aa78b045ce753c97, type: 3}
+      - {fileID: 21300000, guid: 5169d9a863adfa441880c6bf03e4d45b, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    - frames:
+      - {fileID: 21300000, guid: f56b33ccd1c5a6248a2a48ab1a68f4b7, type: 3}
+      - {fileID: 21300000, guid: e407ff64162554a46a0a7942ec264113, type: 3}
+      facesRight: 0
+      framesPerSecond: 10
+    encounterEffects:
+    - {fileID: 21300000, guid: 0ad2492dcaaeea34396ab9f8122fc6da, type: 3}
+    - {fileID: 21300000, guid: 6cb75f0cc2edcc34691444936d01d690, type: 3}
+    - {fileID: 21300000, guid: b9644c7518534314a94fac181b0baa8d, type: 3}
+    - {fileID: 21300000, guid: f39fbc2ef3084e146ba1b77eeaa99853, type: 3}
+    - {fileID: 21300000, guid: 92f65b1e0942c9a4e8a00ccb41eb3053, type: 3}
+    - {fileID: 21300000, guid: 9467e6c6643c20141ab4c7408f759d10, type: 3}
+    - {fileID: 21300000, guid: 532ad2b2f41be3943b65d8f5e924d14a, type: 3}
+    - {fileID: 21300000, guid: e0f97c5e75849134f9f54c3de4c8508a, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: af2b3f31d4f0abe45a4ec3881821c69b, type: 3}
+    - {fileID: 21300000, guid: 537648b83844f094f921ce35fc93905d, type: 3}
+    - {fileID: 21300000, guid: 45bd7c47bfcf94a44a2fbd8a63a7b1d1, type: 3}
+    - {fileID: 21300000, guid: 9f38a4e3a13e0bd488b0c6638bab5337, type: 3}
+    guardianSprites: []
+    segmentProps: []
+    hazardAnimations: []
+    stationaryAnimation:
+      frames: []
+      facesRight: 1
+      framesPerSecond: 10
+  - title: "\u98CE\u66B4\u6D77\u9762"
+    boss: "\u72C2\u6F9C\u5229\u7EF4\u5766"
+    mechanic: "\u6D77\u9762\u6E38\u6CF3 / \u6D6A\u6D8C\u63A8\u8FDB / \u8DC3\u51FA\u6C34\u9762"
+    sky: {r: 0.039215688, g: 0.15294118, b: 0.2509804, a: 1}
+    distance: {r: 0.078431375, g: 0.3137255, b: 0.47843137, a: 1}
+    structure: {r: 0.105882354, g: 0.22745098, b: 0.32156864, a: 1}
+    accent: {r: 0.34117648, g: 0.9019608, b: 0.8509804, a: 1}
+    danger: {r: 1, g: 0.69803923, b: 0.34117648, a: 1}
+    background: {fileID: 21300000, guid: cc5f8e69f09c7ec498316c067f45ac46, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 2a06ec9a3a121cb4bb7d72d97ceaf635, type: 3}
+      - {fileID: 21300000, guid: edc0b4da45e8a134e82efeafb798d176, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 2a06ec9a3a121cb4bb7d72d97ceaf635, type: 3}
+      - {fileID: 21300000, guid: edc0b4da45e8a134e82efeafb798d176, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    - frames:
+      - {fileID: 21300000, guid: 7889544459567734ba9385a61c0698bf, type: 3}
+      - {fileID: 21300000, guid: d7da4ddb9dbfd7845a025d4a44099f0e, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    - frames:
+      - {fileID: 21300000, guid: 36693b798d5c92041ac4b51adc4c4605, type: 3}
+      - {fileID: 21300000, guid: 4133cb0f6c3b40949b32766c497d1900, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    bossOrnaments:
+    - {fileID: 21300000, guid: 8a4d64dc62c59e64387cea21d55e8cec, type: 3}
+    - {fileID: 21300000, guid: 456dffe2a209dc344baf3b543b69bc4a, type: 3}
+    - {fileID: 21300000, guid: 822fed4745f77064785b979490c9fa6e, type: 3}
+    - {fileID: 21300000, guid: a0f311bac806c2a4f9b5598be12fa1ef, type: 3}
+    - {fileID: 21300000, guid: 024b5161c7a9ec94a847df1c6e01b766, type: 3}
+    - {fileID: 21300000, guid: 01f6b892d7118944395d87fc58a169ca, type: 3}
+    - {fileID: 21300000, guid: 9ecee032645ed1e4bba7dd6ff09a8511, type: 3}
+    - {fileID: 21300000, guid: fcda89ff88f84bc4998e7600ba215280, type: 3}
+    - {fileID: 21300000, guid: ecfb9690ee44ade49b6e1f58d4da8f8e, type: 3}
+    - {fileID: 21300000, guid: eb544c3c67cc0b44a969dc74e0dc103d, type: 3}
+    - {fileID: 21300000, guid: 5accc4fa182ce1543a66a6d1bed9f047, type: 3}
+    - {fileID: 21300000, guid: bf39d7f17953fe145b329e46ee6c10c0, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: 6029fc80ad675e04dab4b6ce0742a296, type: 3}
+    - {fileID: 21300000, guid: 9307a95f18a1eab4fa24943e5186a155, type: 3}
+    - {fileID: 21300000, guid: 6ceaf4b7b864ddc47bcd73769d4ee079, type: 3}
+    - {fileID: 21300000, guid: c8c671592ef516c4aaf3904200bdc89a, type: 3}
+    bossTechniques:
+    - name: "\u6CE1\u6CAB\u9C7C\u96F7"
+      release: "\u53CC\u9C7C\u96F7\u4ECE\u6C34\u4E0B\u6CBF\u4E0D\u540C\u5F27\u7EBF\u8DC3\u51FA\u3002"
+      visual: "\u8C61\u7259\u88C5\u7532\u9C7C\u96F7\u62D6\u51FA\u7EC6\u6CE1\u5C3E\u8FF9\uFF0C\u6D6A\u82B1\u4EC5\u5728\u7834\u6C34\u70B9\u76DB\u5F00\u3002"
+      dodge: "\u8DF3\u4E0A\u6D6E\u53F0\u6216\u8FDB\u5165\u4E24\u6761\u5F27\u7EBF\u4E4B\u95F4\u3002"
+      frames:
+      - {fileID: 21300000, guid: bd6ddd584acdd464a999449509418bdf, type: 3}
+      - {fileID: 21300000, guid: bd9da9ae3cd80444db011191f9111353, type: 3}
+    - name: "\u8230\u9CCD\u7834\u6D6A"
+      release: "\u8230\u9CCD\u6A2A\u626B\u540E\u5728\u65E7\u4F4D\u7F6E\u7ACB\u8D77\u4E00\u9053\u6D6A\u810A\u3002"
+      visual: "\u5B9E\u4F53\u6298\u53E0\u8230\u9CCD\u5207\u5F00\u9752\u7EFF\u6C34\u819C\uFF0C\u6D6A\u810A\u6709\u6DF1\u6D45\u901A\u900F\u5C42\u3002"
+      dodge: "\u5148\u8DF3\u8FC7\u8230\u9CCD\uFF0C\u518D\u79BB\u5F00\u6D6A\u810A\u4F4D\u7F6E\u3002"
+      frames:
+      - {fileID: 21300000, guid: 1a344a8b41f1738468db2f87c1363d8a, type: 3}
+      - {fileID: 21300000, guid: 5716c77294a70c049bf5b17c3bb81fe4, type: 3}
+    - name: "\u5929\u6F6E\u4E09\u53E0"
+      release: "\u4E09\u9053\u9AD8\u5EA6\u4E0D\u540C\u7684\u7A84\u6D6A\u5899\u4F9D\u6B21\u538B\u6765\u3002"
+      visual: "\u4E09\u91CD\u6D6A\u51A0\u5177\u6709\u5404\u5F02\u8F6E\u5ED3\uFF0C\u767D\u6CAB\u7EC6\u788E\u800C\u4E0D\u8FC7\u66DD\u3002"
+      dodge: "\u5728\u6D6A\u5899\u95F4\u6362\u4F4D\u6216\u4ECE\u6D6E\u53F0\u8DC3\u8FC7\u4F4E\u6D6A\u3002"
+      frames:
+      - {fileID: 21300000, guid: 4657b753fcf25dd4fa9e66038fbe2916, type: 3}
+      - {fileID: 21300000, guid: 1a28447eea277314aa6ad2c6d245c1c4, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: 9e18f2eacc0a62a4595fc33cae6087b1, type: 3}
+      - {fileID: 21300000, guid: 5028bd9daac2e6e46838207d5e3685cf, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: 79943ac2f3bb7424c88e44d45d040592, type: 3}
+      - {fileID: 21300000, guid: 97457869081cd6c44b04c95fb7778876, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: 1fa450e8cfc0b094a9557029a92235de, type: 3}
+      - {fileID: 21300000, guid: a67be56b0f5a4034b9024a0d8861127e, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: ec681132e45c9364296342cd574f55c9, type: 3}
+      - {fileID: 21300000, guid: 42651216ec1f8364a9aaa745138b5d2a, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    encounterEffects:
+    - {fileID: 21300000, guid: c6d53cc4b289abc43b67a07368376877, type: 3}
+    - {fileID: 21300000, guid: 13a39120f6318044f9be8d3127b56b80, type: 3}
+    - {fileID: 21300000, guid: de85b4ef546ac314a9c690f98d3d66c6, type: 3}
+    - {fileID: 21300000, guid: e2f74cd6fb1b57e4f990f778997f7982, type: 3}
+    - {fileID: 21300000, guid: b6120d321510c6a4ba262fded013babf, type: 3}
+    - {fileID: 21300000, guid: 6cabe67b456882e4cb3e0c2df732c69e, type: 3}
+    - {fileID: 21300000, guid: d601e5f5cd6f37c44b3bacf1b5cd6209, type: 3}
+    - {fileID: 21300000, guid: 6f00094e5828ef14cb5bd5951aa39861, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 6be39a04c5d2807418326e07cc172ed3, type: 3}
+    - {fileID: 21300000, guid: b75c8c297ea65364db5df032065f51a8, type: 3}
+    - {fileID: 21300000, guid: de357fbd0a8b9b142a769d6b9735d4a9, type: 3}
+    - {fileID: 21300000, guid: d202b68b053200644b978d081e31ad4a, type: 3}
+    guardianSprites: []
+    segmentProps:
+    - {fileID: 21300000, guid: 6be39a04c5d2807418326e07cc172ed3, type: 3}
+    - {fileID: 21300000, guid: b75c8c297ea65364db5df032065f51a8, type: 3}
+    - {fileID: 21300000, guid: de357fbd0a8b9b142a769d6b9735d4a9, type: 3}
+    - {fileID: 21300000, guid: d202b68b053200644b978d081e31ad4a, type: 3}
+    hazardAnimations: []
+    stationaryAnimation:
+      frames: []
+      facesRight: 1
+      framesPerSecond: 10
+  - title: "\u6DF1\u6E0A\u70ED\u6CC9"
+    boss: "\u6DF1\u6E0A\u6BCD\u5DE2"
+    mechanic: "\u6C34\u4E0B\u6D6E\u6C89 / \u6697\u6D41\u6D8C\u52A8 / \u900F\u5149\u5149\u67F1"
+    sky: {r: 0.011764706, g: 0.043137256, b: 0.09411765, a: 1}
+    distance: {r: 0.05490196, g: 0.16470589, b: 0.26666668, a: 1}
+    structure: {r: 0.07058824, g: 0.1882353, b: 0.24705882, a: 1}
+    accent: {r: 0.30980393, g: 0.84705883, b: 1, a: 1}
+    danger: {r: 1, g: 0.43137255, b: 0.61960787, a: 1}
+    background: {fileID: 21300000, guid: a76ad4bda8d8f01468e9022edf447e05, type: 3}
+    bossAnimation:
+      frames:
+      - {fileID: 21300000, guid: 3774eb4c38b246e41abf69b16fb2ae3e, type: 3}
+      - {fileID: 21300000, guid: 02264b60bcb38674ca1a7030f3536051, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    bossForms:
+    - frames:
+      - {fileID: 21300000, guid: 3774eb4c38b246e41abf69b16fb2ae3e, type: 3}
+      - {fileID: 21300000, guid: 02264b60bcb38674ca1a7030f3536051, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    - frames:
+      - {fileID: 21300000, guid: fbf99d04b66280f48956d7c363428c8d, type: 3}
+      - {fileID: 21300000, guid: 879bd0ca3e749f34b8f779f4c1db9560, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    - frames:
+      - {fileID: 21300000, guid: f7837ead86325904381521a0b91c1e91, type: 3}
+      - {fileID: 21300000, guid: 07513b86464f0de4d8c6fa9708e87665, type: 3}
+      facesRight: 0
+      framesPerSecond: 8
+    bossOrnaments:
+    - {fileID: 21300000, guid: 5ca76dbd7d4e424459493832518f1489, type: 3}
+    - {fileID: 21300000, guid: 8558138ecf334b14aa6368def579cf2a, type: 3}
+    - {fileID: 21300000, guid: 42fa0f89471277a49bb559f0e155530c, type: 3}
+    - {fileID: 21300000, guid: 4513331551fb2954b95c099660582843, type: 3}
+    - {fileID: 21300000, guid: 502a0f89101325c4aa6fb4fd12cadbfe, type: 3}
+    - {fileID: 21300000, guid: 8cf94b03a18a48c44b04fc9b21ca9161, type: 3}
+    - {fileID: 21300000, guid: 90cf79531c7ffc24683a7466ea1db793, type: 3}
+    - {fileID: 21300000, guid: a5e60dac14556cb4a93632e6085ff8d2, type: 3}
+    - {fileID: 21300000, guid: 48cac7fc182dcd94f9140f8926e02b93, type: 3}
+    - {fileID: 21300000, guid: 1acdf3d075571464881c58a1c04dba18, type: 3}
+    - {fileID: 21300000, guid: 292e12ca7e4f3894dba72cffd7ff048d, type: 3}
+    - {fileID: 21300000, guid: 3003b1f0803f0f541a5257245cefbb05, type: 3}
+    bossUltimateFrames:
+    - {fileID: 21300000, guid: b649a2f336fdd664296a5152572f5b8c, type: 3}
+    - {fileID: 21300000, guid: 71d79108a266fc346b975e0a36c56e20, type: 3}
+    - {fileID: 21300000, guid: c8d714a414bc5a648b79d07b100d9fef, type: 3}
+    - {fileID: 21300000, guid: 4e45d99a94e6e9a44a71771fc8e0196a, type: 3}
+    bossTechniques:
+    - name: "\u7BA1\u866B\u7130\u51A0"
+      release: "\u4E09\u5EA7\u7BA1\u866B\u70ED\u6CC9\u9519\u65F6\u55B7\u53D1\uFF0C\u4FDD\u7559\u53EF\u6E38\u51FA\u7684\u7A7A\u9699\u3002"
+      visual: "\u9499\u8D28\u7BA1\u58C1\u6258\u8D77\u7425\u73C0\u70ED\u7FBD\u6D41\uFF0C\u9752\u8272\u83CC\u819C\u9644\u7740\u4E8E\u8FB9\u7F18\u3002"
+      dodge: "\u6E38\u5165\u4E24\u6839\u70ED\u67F1\u4E4B\u95F4\u3002"
+      frames:
+      - {fileID: 21300000, guid: 9b23a5603456f6c40a7476854378be4f, type: 3}
+      - {fileID: 21300000, guid: 91e6c06ca169ad644a5f0654593c59e9, type: 3}
+    - name: "\u58A8\u6676\u5206\u88C2"
+      release: "\u58A8\u6676\u6CBF\u4E24\u6761\u5206\u53C9\u659C\u7EBF\u5C04\u51FA\u3002"
+      visual: "\u534A\u900F\u660E\u58A8\u56CA\u7834\u88C2\u4E3A\u68F1\u6676\u4E0E\u7EC6\u5C0F\u8367\u5149\u6DB2\u6EF4\u3002"
+      dodge: "\u6CBF\u5206\u53C9\u5916\u7F18\u4E0A\u4E0B\u6E38\u52A8\u3002"
+      frames:
+      - {fileID: 21300000, guid: 3dc2acb896a580848a99b4ddbcb1a0b1, type: 3}
+      - {fileID: 21300000, guid: c8e83101b7db1e94eaf742e7d1481803, type: 3}
+    - name: "\u6DF1\u6E0A\u82B1\u623F"
+      release: "\u56DB\u74E3\u58F3\u53F6\u6CBF\u5F27\u7EBF\u5305\u6284\u65E7\u4F4D\u7F6E\uFF0C\u9876\u90E8\u7559\u6709\u51FA\u53E3\u3002"
+      visual: "\u73CD\u73E0\u8D1D\u58F3\u3001\u9CC3\u819C\u548C\u70ED\u6CC9\u70DF\u4E1D\u6784\u6210\u6E05\u695A\u7684\u56DB\u74E3\u8F6E\u5ED3\u3002"
+      dodge: "\u4ECE\u9876\u90E8\u7F3A\u53E3\u6E38\u51FA\uFF0C\u653B\u51FB\u4E0D\u4F1A\u7EE7\u7EED\u8FFD\u8E2A\u3002"
+      frames:
+      - {fileID: 21300000, guid: 88bffb140312fab4dbe9d6d300e1ba02, type: 3}
+      - {fileID: 21300000, guid: c362294a35ed50145a7899a7e0fc9126, type: 3}
+    enemyAnimations:
+    - frames:
+      - {fileID: 21300000, guid: a8a54a2400633d54c9424ea5d3ee7600, type: 3}
+      - {fileID: 21300000, guid: ff996fef33e76df4984e46b66d18b3bb, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: e02dde7c326fcfd4faa86c12133742c8, type: 3}
+      - {fileID: 21300000, guid: 39b05b76a152a37488c8b2756c9c9f84, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: b7f32fbadf1123f4aba1ec8d88880e16, type: 3}
+      - {fileID: 21300000, guid: da462582e053aaf4eac13a444b72de55, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    - frames:
+      - {fileID: 21300000, guid: 639483927cdc6214ebc97d3992d3c40e, type: 3}
+      - {fileID: 21300000, guid: 7a21bcf7039941440b209cedc1da102a, type: 3}
+      facesRight: 0
+      framesPerSecond: 7
+    encounterEffects:
+    - {fileID: 21300000, guid: 58a1915d5810b944ba68f5135c263bf7, type: 3}
+    - {fileID: 21300000, guid: 002d1c80bcee8e64bbea90dec1564948, type: 3}
+    - {fileID: 21300000, guid: 66eefe373d98f184c90892260e14ebed, type: 3}
+    - {fileID: 21300000, guid: 59ef01de5e1d9904f877c6c2c49473e2, type: 3}
+    - {fileID: 21300000, guid: ffcf5438d9ae237429f9d3dd6b4cf7a5, type: 3}
+    - {fileID: 21300000, guid: 1ab5d7830a58af64188b0fb2df852fe7, type: 3}
+    - {fileID: 21300000, guid: 635a9bd1ade74bd4a85594909307531e, type: 3}
+    - {fileID: 21300000, guid: e0fd5178b2fe6e348b9710bfd30150ed, type: 3}
+    architecture:
+    - {fileID: 21300000, guid: 55045066ae9b01f4fbde2ee53979b33b, type: 3}
+    - {fileID: 21300000, guid: 982ed65c051ad3340950d51573047e8a, type: 3}
+    - {fileID: 21300000, guid: 227a66d0e4afbeb41954237236906339, type: 3}
+    - {fileID: 21300000, guid: fe8588198712a454fab8a91a0d8f504d, type: 3}
+    guardianSprites: []
+    segmentProps:
+    - {fileID: 21300000, guid: 55045066ae9b01f4fbde2ee53979b33b, type: 3}
+    - {fileID: 21300000, guid: 982ed65c051ad3340950d51573047e8a, type: 3}
+    - {fileID: 21300000, guid: 227a66d0e4afbeb41954237236906339, type: 3}
+    - {fileID: 21300000, guid: fe8588198712a454fab8a91a0d8f504d, type: 3}
+    hazardAnimations: []
+    stationaryAnimation:
+      frames: []
+      facesRight: 1
+      framesPerSecond: 10
+  playerHealth: 100
+  moveSpeed: 5
+  dodgeDuration: 0.18
+  dodgeCooldown: 2.5
+  dodgeSpeedMultiplier: 3.2
+  arenaHalfSize: {x: 22, y: 16}
+  wavesBeforeBoss: 10
+  waveSeconds: 55
+  intermissionSeconds: 4
+  maximumEnemies: 36
+  maximumProjectiles: 192
+  maximumPickups: 128
+  masterVolume: 0.6
+  screenShake: 0.35
+  camBaseSize: 7.7
+  camAdsSize: 4.2
+  camLead: 3.6
+  camBack: 0.9
+  camShoulderOffset: 0.65
+  camPitchDeg: 28
+  camHeight: 0
+  camFollow: 9
+  camZoomSpeed: 12
+  camRecoilMax: 0.25
+  camRecoilDecay: 1.6
+  camRecoilPitch: 0.4
+  camWeaponRecoil: {x: 0.045, y: 0.12, z: 0.18}
+  mouseLookSensitivity: 0.15
+  adsMoveMultiplier: 0.6
+  playerBackSprite: {fileID: 0}
+  uiFont: {fileID: 12800000, guid: 3b16a795f7101634cbb3f7eb43a6053b, type: 3}
+  spriteMaterial: {fileID: 2100000, guid: 10de1bb06dcfb974c838d76cd2329468, type: 2}
+  sideSpriteMaterial: {fileID: 2100000, guid: 8eecc71f4e447e240ba8e5426aff987b, type: 2}
+  sideLightPrefab: {fileID: 6944909816065959365, guid: a5dda157423366846b690d8649772aeb, type: 3}
+  playerSprite: {fileID: 0}
+  enemySprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponSprites:
+  - {fileID: 21300000, guid: 0999e64da9f11fb4cadceb79d3f47176, type: 3}
+  - {fileID: 21300000, guid: bc5d9c958b7931243beb86d142cda1d8, type: 3}
+  - {fileID: 21300000, guid: d2531208157ffb5419e3f1b34f562257, type: 3}
+  - {fileID: 21300000, guid: 84683412977fe534388d0c8b578dec73, type: 3}
+  - {fileID: 21300000, guid: 78e71a17a90f1e540850e43b934353f0, type: 3}
+  - {fileID: 21300000, guid: e098b60b44e21b3448a978cd006ddc11, type: 3}
+  - {fileID: 21300000, guid: b7781833beb11964aa05f6f04e7a931c, type: 3}
+  - {fileID: 21300000, guid: 0803b84bede58cd4cbb54fee2b5bd2fd, type: 3}
+  - {fileID: 21300000, guid: 6dabe5db4b298754aa3485423370fe1b, type: 3}
+  weaponViewSprites:
+  - {fileID: 21300000, guid: 0a74b2deb7914844091431ad5eb14f60, type: 3}
+  - {fileID: 21300000, guid: aa370f3f6ceebc8429a7373f51734a56, type: 3}
+  - {fileID: 21300000, guid: e62b3b13be6ace84f9e0c16cb8957818, type: 3}
+  - {fileID: 21300000, guid: 26502b242ae7aae4ca2b34b47715c875, type: 3}
+  - {fileID: 21300000, guid: 37cb2fa3b539cac448cebdc9ac7981b3, type: 3}
+  - {fileID: 21300000, guid: f7daec96641cd184d89302ba2afc4e71, type: 3}
+  - {fileID: 21300000, guid: 52a8dae64f9203f43a755ee4aa76ca45, type: 3}
+  - {fileID: 21300000, guid: c0365bada5c69a54cb578197a0ddc010, type: 3}
+  - {fileID: 21300000, guid: 97852b3d349a8b547a1fb49302b8133c, type: 3}
+  scenerySprites:
+  - {fileID: 21300000, guid: f619ff27e1e956640926e0459951dab5, type: 3}
+  - {fileID: 21300000, guid: e1c278323d6db264cac8639c39c9de47, type: 3}
+  - {fileID: 21300000, guid: 579c8cf8cb50fe64ca8234975784c98e, type: 3}
+  - {fileID: 21300000, guid: 5880c05b8e1da3b4dbd640a88f599762, type: 3}
+  - {fileID: 21300000, guid: e73020e60253f274e84d6871418cd166, type: 3}
+  - {fileID: 21300000, guid: 184e5119d34a2d3408580edecf231746, type: 3}
+  - {fileID: 21300000, guid: e6f1447e00cb34c469acea84b628856a, type: 3}
+  - {fileID: 21300000, guid: 298b2ca21fc2b1645a25c428697cc06a, type: 3}
+  platformSprites:
+  - {fileID: 21300000, guid: e26cb281ea0e1e742b4e52b3933e4c4e, type: 3}
+  - {fileID: 21300000, guid: cc4b94c7ba3728547a2d26fb9906506b, type: 3}
+  - {fileID: 21300000, guid: 4aa9cbda516a0574daae874eb9929302, type: 3}
+  - {fileID: 21300000, guid: ef81d6b6c15eac74898c84b6c9e40e6b, type: 3}
+  - {fileID: 21300000, guid: ca730ecf0021b954fa153546fde81392, type: 3}
+  - {fileID: 21300000, guid: b604276ab25ff354185c5505ae0b539f, type: 3}
+  solidWallSprites:
+  - {fileID: 21300000, guid: c5d72097d3d058c40abb0efe0b35a192, type: 3}
+  - {fileID: 21300000, guid: 6ffe7e6b23855f64384ae6d694713d09, type: 3}
+  - {fileID: 21300000, guid: df6ff3784213bfb44bd843ced45b082b, type: 3}
+  - {fileID: 21300000, guid: 83aa1cf2a475039419623148cf30d97f, type: 3}
+  - {fileID: 21300000, guid: 538e13cbbbd3667418188d857fc8ea68, type: 3}
+  - {fileID: 21300000, guid: 3d1c43bc0b81d134992637b6fa77317b, type: 3}
+  - {fileID: 21300000, guid: b35d1e4378c4c7f42a6db6a437a735d4, type: 3}
+  - {fileID: 21300000, guid: 537648b83844f094f921ce35fc93905d, type: 3}
+  enemyAnimations:
+  - frames:
+    - {fileID: 21300000, guid: 7de069b95dc0b9346bbe6f406e9ed454, type: 3}
+    - {fileID: 21300000, guid: 866ad9dcfe1fcf447a4804084cc4fc44, type: 3}
+    facesRight: 0
+    framesPerSecond: 10
+  - frames:
+    - {fileID: 21300000, guid: 6d6fdc01dbc3b414f8f6aeb29b420c73, type: 3}
+    - {fileID: 21300000, guid: 1559a353730f2184ca209a3833c75b9e, type: 3}
+    facesRight: 0
+    framesPerSecond: 10
+  - frames:
+    - {fileID: 21300000, guid: 3813bca0d087aa24d9ca343f43d76bfe, type: 3}
+    - {fileID: 21300000, guid: 9444abf2d1fe55a43ac3fd8e6c190fce, type: 3}
+    facesRight: 0
+    framesPerSecond: 10
+  - frames:
+    - {fileID: 21300000, guid: 5ec37884a518f084f9d4ec6b7c51ade6, type: 3}
+    - {fileID: 21300000, guid: 48931c6c53ebef64aa33a86cfd7c54ac, type: 3}
+    facesRight: 0
+    framesPerSecond: 10
+  combatEffectSprites:
+  - {fileID: 21300000, guid: 416cf54ced584704892d1b8cb80ba9e7, type: 3}
+  - {fileID: 21300000, guid: 8b8593c6466d8c44584ed7d8838a636f, type: 3}
+  - {fileID: 21300000, guid: e3add22fdfcb6694bbd6273118ab95f1, type: 3}
+  - {fileID: 21300000, guid: 5e5ab7e3027784145bdcd6b179bcc361, type: 3}
+  - {fileID: 21300000, guid: 767f994dd0393884695e34bfce959048, type: 3}
+  - {fileID: 21300000, guid: c8e169f9a65297542aa68a556d709062, type: 3}
+  - {fileID: 21300000, guid: 1cdfd803ba3cb854e9be618ae50f0251, type: 3}
+  - {fileID: 21300000, guid: 1be0bf66a4b44ea4b833a0f1928388c3, type: 3}
+  weapons:
+  - displayName: "AR-07 / \u7A81\u51FB\u6B65\u67AA"
+    damage: 12
+    shotsPerSecond: 7
+    magazine: 28
+    reloadSeconds: 1.2
+    pellets: 1
+    spreadDegrees: 2
+    targetsPerBullet: 1
+    projectileSpeed: 24
+    color: {r: 0.28, g: 0.88, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.06
+  - displayName: "SG-12 / \u9730\u5F39\u67AA"
+    damage: 5
+    shotsPerSecond: 1.1
+    magazine: 6
+    reloadSeconds: 1.5
+    pellets: 6
+    spreadDegrees: 22
+    targetsPerBullet: 1
+    projectileSpeed: 20
+    color: {r: 1, g: 0.65, b: 0.28, a: 1}
+    explosionRadius: 0
+    recoil: 0.06
+  - displayName: "SR-09 / \u7CBE\u51C6\u6B65\u67AA"
+    damage: 45
+    shotsPerSecond: 1.2
+    magazine: 8
+    reloadSeconds: 1.6
+    pellets: 1
+    spreadDegrees: 0.4
+    targetsPerBullet: 2
+    projectileSpeed: 38
+    color: {r: 0.68, g: 0.66, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.06
+  - displayName: "SMG-21 / \u75BE\u98CE"
+    damage: 7
+    shotsPerSecond: 13
+    magazine: 42
+    reloadSeconds: 1.05
+    pellets: 1
+    spreadDegrees: 5
+    targetsPerBullet: 1
+    projectileSpeed: 27
+    color: {r: 0.2, g: 0.8, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.035
+  - displayName: "RG-08 / \u7535\u78C1\u8F68\u9053"
+    damage: 82
+    shotsPerSecond: 0.7
+    magazine: 4
+    reloadSeconds: 1.9
+    pellets: 1
+    spreadDegrees: 0
+    targetsPerBullet: 4
+    projectileSpeed: 52
+    color: {r: 0.8, g: 0.35, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.2
+  - displayName: "GL-40 / \u70C8\u7130\u69B4\u5F39"
+    damage: 42
+    shotsPerSecond: 1.2
+    magazine: 5
+    reloadSeconds: 1.8
+    pellets: 1
+    spreadDegrees: 3
+    targetsPerBullet: 1
+    projectileSpeed: 15
+    color: {r: 1, g: 0.64, b: 0.1, a: 1}
+    explosionRadius: 2.5
+    recoil: 0.16
+  - displayName: "LS-01 / \u9713\u5149\u6FC0\u5149\u5203"
+    damage: 54
+    shotsPerSecond: 2.1
+    magazine: 18
+    reloadSeconds: 0.9
+    pellets: 1
+    spreadDegrees: 0
+    targetsPerBullet: 3
+    projectileSpeed: 22
+    color: {r: 0.22, g: 0.95, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.04
+  - displayName: "AC-13 / \u7535\u5F27\u6295\u5C04\u5668"
+    damage: 24
+    shotsPerSecond: 2.4
+    magazine: 16
+    reloadSeconds: 1.35
+    pellets: 1
+    spreadDegrees: 0
+    targetsPerBullet: 3
+    projectileSpeed: 19
+    color: {r: 0.48, g: 0.68, b: 1, a: 1}
+    explosionRadius: 0
+    recoil: 0.08
+  - displayName: "BN-07 / \u661F\u8109\u8FDE\u53D1\u5F29"
+    damage: 16
+    shotsPerSecond: 5.5
+    magazine: 24
+    reloadSeconds: 1.25
+    pellets: 3
+    spreadDegrees: 8
+    targetsPerBullet: 2
+    projectileSpeed: 32
+    color: {r: 1, g: 0.44, b: 0.7, a: 1}
+    explosionRadius: 0
+    recoil: 0.055
+  incomingDamageMultiplier: 1.35
+  stageDamageStep: 0.04
+  enemyHitLimit: 0.24
+  hazardHitLimit: 0.28
+  bossSkillHitLimit: 0.36
+  bossUltimateHitLimit: 0.45
+  playerMaximumHitFraction: 0.55
+  playerHitProtectionSeconds: 0.6
+  bossSkillDamageMultiplier: 1.5
+  bossUltimateDamageMultiplier: 1.9
+  bossSkillAreaScale: 1.65
+  bossUltimateAreaScale: 1.9
+  bossDamageReduction: 0.62
+  bossMaximumHitFraction: 0.008
+  bossHealthMultiplier: 1.5
+  pickupSprites:
+  - {fileID: 21300000, guid: af0d7ae29a29a604f91492547c9eb7ec, type: 3}
+  - {fileID: 21300000, guid: ec6f5750332b36a46b910bfb4bbe9637, type: 3}
+  - {fileID: 21300000, guid: bd9377fb0c9aa1246aa9269a3ef059a5, type: 3}
+  - {fileID: 21300000, guid: e8dec177dcd5a664ea3e1dbaceff7a5a, type: 3}
+  - {fileID: 21300000, guid: e4aecb6197013b346a0d598931e303ac, type: 3}
+  - {fileID: 21300000, guid: bdc5056d5cf8e754fba050cad44fc89f, type: 3}
+  - {fileID: 21300000, guid: e962eba9ea6b0c34096284df5727df29, type: 3}
+  - {fileID: 21300000, guid: 330cdff63f161444d8b4035087321df5, type: 3}

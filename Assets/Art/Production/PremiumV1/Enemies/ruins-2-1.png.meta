@@ -1,0 +1,758 @@
+fileFormatVersion: 2
+guid: 311be3080a9fde14d96ab24f7cf3cfce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4232802089147365032
+    second: ruins-2-1_0
+  - first:
+      213: 9060730713226389538
+    second: ruins-2-1_1
+  - first:
+      213: 1767618643490083163
+    second: ruins-2-1_2
+  - first:
+      213: 8276820571353406752
+    second: ruins-2-1_3
+  - first:
+      213: -1310314437143919217
+    second: ruins-2-1_4
+  - first:
+      213: 7188283115606893993
+    second: ruins-2-1_5
+  - first:
+      213: -4281933943466002670
+    second: ruins-2-1_6
+  - first:
+      213: 855922525041166768
+    second: ruins-2-1_7
+  - first:
+      213: 5883171467347165378
+    second: ruins-2-1_8
+  - first:
+      213: -7006638753979115329
+    second: ruins-2-1_9
+  - first:
+      213: 6109443499224306233
+    second: ruins-2-1_10
+  - first:
+      213: -7045490522769132718
+    second: ruins-2-1_11
+  - first:
+      213: 8189489148919141728
+    second: ruins-2-1_12
+  - first:
+      213: 8739625662771453253
+    second: ruins-2-1_13
+  - first:
+      213: 4222162929878932763
+    second: ruins-2-1_14
+  - first:
+      213: -8586286827516044028
+    second: ruins-2-1_15
+  - first:
+      213: 2875758405858526005
+    second: ruins-2-1_16
+  - first:
+      213: 4039377395105000575
+    second: ruins-2-1_17
+  - first:
+      213: 5087034945078763151
+    second: ruins-2-1_18
+  - first:
+      213: -6237912815326867738
+    second: ruins-2-1_19
+  - first:
+      213: -4706540036913583698
+    second: ruins-2-1_20
+  - first:
+      213: 6704712421877113149
+    second: ruins-2-1_21
+  - first:
+      213: 100758683204445080
+    second: ruins-2-1_22
+  - first:
+      213: -6122740386815205566
+    second: ruins-2-1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ruins-2-1_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 42
+        width: 446
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6f820e21fedba30800000000000000
+      internalID: 4232802089147365032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228a45fe39e2ebd70800000000000000
+      internalID: 9060730713226389538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 53
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51959f7ac7d78810800000000000000
+      internalID: 1767618643490083163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 53
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d5a29057c2dd270800000000000000
+      internalID: 8276820571353406752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 61
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8588f536f3d0dde0800000000000000
+      internalID: -1310314437143919217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5efa29869e1c360800000000000000
+      internalID: 7188283115606893993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217750cd3c38394c0800000000000000
+      internalID: -4281933943466002670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 42
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9855c6009d0eb00800000000000000
+      internalID: 855922525041166768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 42
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c001f7774935a150800000000000000
+      internalID: 5883171467347165378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 42
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8d69f0d2b63ce90800000000000000
+      internalID: -7006638753979115329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_10
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 42
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932959a4e7a19c450800000000000000
+      internalID: 6109443499224306233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_11
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 42
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253f6f9b2b3693e90800000000000000
+      internalID: -7045490522769132718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 42
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065dd3dbdf8e6a170800000000000000
+      internalID: 8189489148919141728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_13
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 49
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d516b5c33694970800000000000000
+      internalID: 8739625662771453253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_14
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 42
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d914390d2289a30800000000000000
+      internalID: 4222162929878932763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_15
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 56
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d5a4a5f9167d880800000000000000
+      internalID: -8586286827516044028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_16
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 44
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5338a01a80fb8e720800000000000000
+      internalID: 2875758405858526005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 42
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ce9fcd650ce0830800000000000000
+      internalID: 4039377395105000575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_18
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 42
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e1b6d8457c89640800000000000000
+      internalID: 5087034945078763151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_19
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 42
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eec596285b7e69a0800000000000000
+      internalID: -6237912815326867738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9ac92d5c20faeb0800000000000000
+      internalID: -4706540036913583698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_21
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 42
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d316223bc6ceb0d50800000000000000
+      internalID: 6704712421877113149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_22
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 42
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893ef601d77f56100800000000000000
+      internalID: 100758683204445080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins-2-1_23
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 42
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f11ffce08a70ba0800000000000000
+      internalID: -6122740386815205566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: a202e76a9f835b24c931d784cda4d62a, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ruins-2-1_0: 4232802089147365032
+      ruins-2-1_1: 9060730713226389538
+      ruins-2-1_10: 6109443499224306233
+      ruins-2-1_11: -7045490522769132718
+      ruins-2-1_12: 8189489148919141728
+      ruins-2-1_13: 8739625662771453253
+      ruins-2-1_14: 4222162929878932763
+      ruins-2-1_15: -8586286827516044028
+      ruins-2-1_16: 2875758405858526005
+      ruins-2-1_17: 4039377395105000575
+      ruins-2-1_18: 5087034945078763151
+      ruins-2-1_19: -6237912815326867738
+      ruins-2-1_2: 1767618643490083163
+      ruins-2-1_20: -4706540036913583698
+      ruins-2-1_21: 6704712421877113149
+      ruins-2-1_22: 100758683204445080
+      ruins-2-1_23: -6122740386815205566
+      ruins-2-1_3: 8276820571353406752
+      ruins-2-1_4: -1310314437143919217
+      ruins-2-1_5: 7188283115606893993
+      ruins-2-1_6: -4281933943466002670
+      ruins-2-1_7: 855922525041166768
+      ruins-2-1_8: 5883171467347165378
+      ruins-2-1_9: -7006638753979115329
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

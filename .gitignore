@@ -1,0 +1,61 @@
+# ===== Unity 生成目录（巨大，绝不提交） =====
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# ===== 项目级构建/验证产物（巨大，非源码） =====
+output/
+Releases/
+Validation/
+TestResults/
+ArtProduction/
+CodexPrompts/
+prompts/
+
+# ===== 生成的项目文件 =====
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+Assembly-CSharp*.csproj
+UpgradeLog*.htm
+.vsconfig
+.vs/
+
+# ===== OS / 编辑器 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== 文本规范化（Unity 推荐） =====
+* text=auto
+*.cs text
+*.shader text
+*.json text
+*.meta text
+*.txt text
+*.md text
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.fbx binary
