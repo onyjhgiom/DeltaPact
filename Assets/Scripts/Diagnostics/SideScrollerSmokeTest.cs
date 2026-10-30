@@ -554,8 +554,18 @@ namespace MoriEchoes.Diagnostics
                 Check(maximum >= minimum && maximum - minimum < 0.12f, "Stage " + stage + " boss body remains vertically stable; effects carry idle motion");
                 if (stage == 1 || stage == 2 || stage == 3 || stage == 4) Check(boss.FieldsCreated > 0, "Stage " + stage + " emitted elemental or laser fields");
                 if (boss.Arms != null) foreach (Health arm in boss.Arms) { arm.Invulnerable = false; arm.TakeDamage(10000, Team.Player); }
-                bossEnemy.Health.Invulnerable = false; bossEnemy.Health.TakeDamage(100000, Team.Player, true);
-                Check(boss.ExecutionWindow && Time.timeScale < 1, "Stage " + stage + " triggers a slow-motion execution before victory");
+                bossEnemy.Health.Invulnerable = false;
+                bossEnemy.Health.TakeDamage(bossEnemy.Health.Current - bossEnemy.Health.Maximum * 0.13f, Team.Player, true);
+                float lowHealth = bossEnemy.Health.Current;
+                yield return WaitGameplay(1.6f); game.Win();
+                Check(game.IsPlaying && Mathf.Approximately(bossEnemy.Health.Current,lowHealth) && !boss.ExecutionWindow,
+                    "Stage " + stage + " keeps fighting at low HP without auto-finisher damage");
+                bossEnemy.Health.SetCurrent(1); game.Win();
+                Check(game.IsPlaying && !bossEnemy.Health.IsDead,"Stage " + stage + " requires the final hit even with one HP");
+                bossEnemy.Health.Invulnerable = false; bossEnemy.Health.TakeDamage(1, Team.Player, true);
+                Check(bossEnemy.Health.IsDead && bossEnemy.Health.Current == 0 && boss.ExecutionWindow && Time.timeScale < 1,
+                    "Stage " + stage + " starts slow-motion presentation only after actual zero HP");
+                game.Pickups.Drop(game.Player.transform.position,1000);
                 yield return new WaitForSecondsRealtime(0.5f);
                 yield return Snap("encounter_" + stage + "_execution.png");
                 yield return new WaitForSecondsRealtime(1.0f);

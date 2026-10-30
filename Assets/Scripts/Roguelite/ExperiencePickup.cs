@@ -31,6 +31,7 @@ namespace MoriEchoes
         private void Update()
         {
             if (!game.IsPlaying || game.Player == null) return;
+            if (game.Level != null && game.Level.Boss != null && game.Level.Boss.Health.IsDead) return;
             phase += Time.deltaTime * 4;
             visual.transform.localPosition = new Vector3(0, Mathf.Sin(phase) * 0.06f, 0);
             Vector2 target = game.Player.transform.position;

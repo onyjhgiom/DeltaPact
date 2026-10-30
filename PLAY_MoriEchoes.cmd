@@ -1,8 +1,8 @@
 @echo off
 setlocal
-set "mori_game=%~dp0Builds\Windows\MoriEchoes_20261028_171506_913\MoriEchoes.exe"
+set "mori_game=%~dp0Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe"
 if not exist "%mori_game%" (
-  echo Verified game build was not found. See docs/SWIM_ART_AND_BOSS_TECHNIQUES_ACCEPTANCE.md.
+  echo Verified game build was not found. See docs/BOSS_PURSUIT_AND_TARGETING_ACCEPTANCE.md.
   pause
   exit /b 1
 )

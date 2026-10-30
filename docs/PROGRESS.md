@@ -855,3 +855,39 @@
 - BuildPipeline: Succeeded; EXE exists: True
 - Report: `C:\UnityProjects\MoriEchoes\docs\BuildReports\Windows_20261029_110837_855.md`
 - 运行验收：未执行。
+
+
+## 2026-10-29T13:54:51.7974083+08:00 / L：实际构建
+
+- BuildPipeline: Succeeded; EXE exists: True
+- Report: `C:\UnityProjects\MoriEchoes\docs\BuildReports\Windows_20261029_135420_994.md`
+- 运行验收：未执行。
+
+
+## 2026-10-29T17:31:16.5608028+08:00 / L：实际构建
+
+- BuildPipeline: Succeeded; EXE exists: True
+- Report: `C:\UnityProjects\MoriEchoes\docs\BuildReports\Windows_20261029_173048_021.md`
+- 运行验收：未执行。
+
+## 2026-10-29 / Boss 越障追击、技能动态瞄准与必须零血量胜利：最终运行验收
+
+以上“运行验收：未执行”是构建时记录。本节记录构建完成后对同一最终 EXE 的实际 Player 验收。
+
+- 最终 EXE：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe`；Unity 6000.6.7f1、Windows x64 Development，实际构建 0 错误、0 警告，27.541 秒。根目录 `PLAY_MoriEchoes.cmd` 已指向该版本。
+- 十关 Boss 实际胶囊碰撞体逐对忽略地形阻挡，可主动追击、高度调整及带预兆的高速接近；玩家子弹仍可命中。保留原关卡边界、阶段造型及攻击素材。
+- 原有打击及 30 招特色技能在蓄力阶段重新瞄准当前位置，整套预警与路径同步移动，攻击前保留约 0.8 秒固定窗口；激活后不继续黏着。保留每关三招特色组合和既有承伤上限。
+- 取消横版和竖井 Boss 低于 15% 时的自动致命补刀及血量回填。剩 1 HP 仍拒绝胜利，实际伤害归零后才播放慢动作死亡演出并结算。修复演出位移吸到经验后升级界面抢占状态的问题，已加入 1000 经验干扰回归。
+- 本轮复用现有 image 生成素材，未发起新生图请求；8 名角色、9 把武器、10 关配置保持原样。备份位于 `Validation/BossPursuit_20261029_092628_002/`。
+
+| 同一最终 EXE 的专项 | 检查数 | 结果 | 证据目录 |
+|---|---:|---|---|
+| 十关越障追击与实际闪避 | 150 | 通过，退出码 0 | `TestResults/BossPursuit_20261029_174449_843/` |
+| 30 招特色技能 | 896 | 通过，退出码 0 | `TestResults/BossTechniques_20261029_174625_883/` |
+| 海面和深水 | 193 | 通过，退出码 0 | `TestResults/Swim_20261029_174828_793/` |
+| 前五关战斗与零血量结算 | 420 | 通过，退出码 0 | `TestResults/Encounter_1280x720_20261029_173550_664/` |
+| 第六至八关路线与零血量结算 | 108 | 通过，退出码 0 | `TestResults/Vertical_20261029_173424_631/` |
+
+共 1767 项自动运行检查通过，报告错误为空。另完成 10040 个纯 C# 断言、5000 次固定种子抽取、93 个脚本三组宏定义语法检查及 13 项导入安全检查。自动运行使用位置/血量/阶段辅助与合成输入，不代表真人正常难度通关或人工平衡认证；Editor Play Mode、实体手柄长测尚未验证，跨机测试按用户要求取消。未生成压缩包。
+
+完整实现路径、Inspector、复测步骤和验收标准：`docs/BOSS_PURSUIT_AND_TARGETING_ACCEPTANCE.md`。交付哈希与文件清单：`Validation/BossPursuit_20261029_Delivery/delivery-verification.json`、`file-changes.json`、`file-changes.csv`。早期失败与超时结果保留，不计入最终通过数。

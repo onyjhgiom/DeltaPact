@@ -49,16 +49,38 @@ Boss 的实际胶囊碰撞体对关内墙、平台、可破坏掩体及其他非
 
 新测试采用实际 Windows Player。场地与 Boss/玩家位置、血量、飞掠冷却及阶段覆盖部分由测试设置；目标逃离使用合成键盘输入；30 招实伤确认首次扣血后恢复测试保护，避免测试角色硬吃全套技能导致后续样本丢失。它们不是真人正常难度通关、实体手柄长测或人工平衡认证。
 
+## 必须打空所有生命
+
+取消低于 15% 生命时的自动致命补刀及生命回填。低血量提示只用于表示装甲濒毁，Boss 仍继续战斗、承伤；不得自动抽空残血、触发演出锁定或提前通关。剩 1 点主生命时调用 `Win()` 也会被拒绝。
+
+只有实际攻击使主 Boss 的 `Health.Current == 0` 且 `Health.IsDead == true` 后，才由 `EnemyAI.CompleteBossDefeat` 开始横版/竖井慢动作终结演出。演出不造成额外伤害，结束后调用原有严格归零检查并结算。水关维持归零后的本关死亡效果和结算。三段血条表示同一个主生命值的三个阶段，均必须耗尽；原有可破坏部件是独立战术弱点，不代替主生命。
+
+主 Boss 已归零、仍在死亡演出时暂停经验吸附，防止演出中的角色位移捡到经验并弹出升级界面，打断胜利状态。Boss 尚存生命时的正常经验拾取不受影响。恢复玩家演出前的无敌/锁定状态，保留暂停与菜单的既有行为。
+
+对应代码另包含 `Assets/Scripts/Enemies/EnemyAI.cs`、`Assets/Scripts/Roguelite/ExperiencePickup.cs`；前五关和竖井回归明确检查低于 15%、剩 1 HP、最后一击归零，以及死亡演出路径上放置 1000 经验仍可结算。既有 `GameManager.Win()` 的归零门槛继续保留。
+
 ## 构建与实际结果
 
-最终程序：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_110837_855\MoriEchoes.exe`。实际 Unity 构建成功，Windows x64 Development，0 错误、0 警告，22.796 秒。构建记录：`docs/BuildReports/Windows_20261029_110837_855.md`；日志：`Logs/BossPursuitBuildRelease_20261029.log`。
+最终程序：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe`。实际 Unity 构建成功，Windows x64 Development，0 错误、0 警告，27.541 秒。构建记录：`docs/BuildReports/Windows_20261029_173048_021.md`；日志：`Logs/BossPursuitZeroHPFixBuild_20261029.log`。
 
 最新运行结果及完整文件哈希见 `Validation/BossPursuit_20261029_Delivery/delivery-verification.json`。构建报告中的“运行未测试”是构建时自动生成的说明，随后 Player 测试结果以本验收及 JSON 为准。
+
+同一最终 EXE 的五组自动回归全部通过，共 1767 项，进程退出码均为 0、报告错误均为空。截图为实际 Windows Player 运行证据。
+
+| 专项 | 检查数 | 截图 | 实际结果目录 |
+|---|---:|---:|---|
+| 十关越障追击、蓄力追踪、实伤与闪避 | 150 | 20 | `TestResults/BossPursuit_20261029_174449_843/` |
+| 十关 30 招独立技能 | 896 | 60 | `TestResults/BossTechniques_20261029_174625_883/` |
+| 海面与深水、浮台、技能及结算 | 193 | 16 | `TestResults/Swim_20261029_174828_793/` |
+| 前五关战斗与严格零血量胜利 | 420 | 见目录 | `TestResults/Encounter_1280x720_20261029_173550_664/` |
+| 第六至八关路线与严格零血量胜利 | 108 | 15 | `TestResults/Vertical_20261029_173424_631/` |
+
+源码辅助检查另通过 10040 个纯 C# 断言、5000 次固定种子的升级抽取、93 个 C# 文件在三组宏定义下的语法检查，以及 13 项导入安全检查。这些辅助检查不代替上述实际 Unity 构建和 Player 回归。
 
 复测命令：
 
 ```powershell
-$game='C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_110837_855\MoriEchoes.exe'
+$game='C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe'
 & 'C:\UnityProjects\MoriEchoes\Tools\Test-BossPursuit.ps1' -Executable $game
 & 'C:\UnityProjects\MoriEchoes\Tools\Test-BossTechniques.ps1' -Executable $game
 & 'C:\UnityProjects\MoriEchoes\Tools\Test-SwimCampaign.ps1' -Executable $game
@@ -66,4 +88,4 @@ $game='C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_110837_855
 & 'C:\UnityProjects\MoriEchoes\Tools\Test-VerticalCampaign.ps1' -Executable $game
 ```
 
-历史失败没有冒充通过：初版越障选错已禁用 CircleCollider2D，改为实际 CapsuleCollider2D 后十关越障专项通过；全招实伤回归因测试角色硬吃组合攻击而中断，确认首次扣血后恢复测试保护并避免失焦暂停影响计时后重测。交付只以最终 EXE 的完整结果为准。未新增压缩包，跨机测试仍按用户要求取消。
+历史失败没有冒充通过：初版越障选错已禁用 CircleCollider2D，改为实际 CapsuleCollider2D 后十关越障专项通过；全招实伤回归因测试角色硬吃组合攻击/失焦暂停中断，确认首次扣血后恢复测试保护并处理测试失焦后重测。一次竖井专项超时，截图出现非目标分辨率，补上仅供诊断的失焦自动恢复后重测通过；零血量演出曾被经验升级中断，增加死亡阶段经验拾取约束后对 1000 经验场景重新验证。交付只以最终 EXE 的完整结果为准。未新增压缩包，跨机测试仍按用户要求取消。

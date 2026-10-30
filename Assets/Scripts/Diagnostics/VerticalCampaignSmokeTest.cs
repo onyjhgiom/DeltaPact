@@ -186,8 +186,18 @@ namespace MoriEchoes.Diagnostics
             yield return new WaitForEndOfFrame();
             ScreenCapture.CaptureScreenshot(Path.Combine(output, "stage_" + (stage + 1) + "_ultimate.png"));
             bossEnemy.Health.TakeDamage(bossEnemy.Health.Current - bossEnemy.Health.Maximum * 0.13f, Team.Player, true);
-            yield return new WaitForSecondsRealtime(2.6f);
-            Check(game.State == RunState.Won, "Boss execution and death presentation complete the stage");
+            float lowHealth = bossEnemy.Health.Current;
+            yield return new WaitForSecondsRealtime(1.6f);
+            game.Win();
+            Check(game.IsPlaying && Mathf.Approximately(bossEnemy.Health.Current,lowHealth) && !boss.ExecutionWindow,
+                "Low boss health does not auto-drain, start execution or grant victory");
+            bossEnemy.Health.SetCurrent(1); game.Win();
+            Check(game.IsPlaying && !bossEnemy.Health.IsDead,"One boss HP still requires the player's final hit");
+            bossEnemy.Health.Invulnerable=false;bossEnemy.Health.TakeDamage(1,Team.Player,true);
+            Check(bossEnemy.Health.IsDead && bossEnemy.Health.Current==0 && boss.ExecutionWindow,"Actual final hit starts zero-HP death presentation");
+            game.Pickups.Drop(game.Player.transform.position,1000);
+            yield return new WaitForSecondsRealtime(1.6f);
+            Check(game.State == RunState.Won, "Zero-HP death completes the stage without XP upgrade interruption (state="+game.State+")");
             Check(game.Effects.BossWarningEmissions > 0 && game.Effects.WarningEmissions == game.Effects.BossWarningEmissions, "Stage " + (stage + 1) + " emits only intentional red boss warnings");
         }
 
@@ -195,6 +205,11 @@ namespace MoriEchoes.Diagnostics
         {
             if (condition) report.checks.Add(description);
             else report.errors.Add(description);
+        }
+
+        private void Update()
+        {
+            if (game != null && game.State == RunState.Paused) game.Resume();
         }
     }
 }

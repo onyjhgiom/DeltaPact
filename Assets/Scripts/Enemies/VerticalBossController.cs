@@ -380,18 +380,21 @@ namespace MoriEchoes
         private void OnDamaged(float amount)
         {
             if (executionStarted || enemy == null || enemy.Health.Current / enemy.Health.Maximum > 0.15f) return;
-            executionStarted = true; ExecutionWindow = true;
-            enemy.Health.SetCurrent(enemy.Health.Maximum * 0.15f);
-            StartCoroutine(ExecuteFinisher());
+            executionStarted = true;
+            if (enemy.Health.Current > 0) game.Hud.Announce("外壳濒毁 // 继续攻击，耗尽剩余生命", 1.6f);
         }
 
-        private IEnumerator ExecuteFinisher()
+        public IEnumerator ExecuteFinisher()
         {
+            if (enemy == null || !enemy.Health.IsDead || enemy.Health.Current > 0) yield break;
+            ExecutionWindow = true;
             executionRunning = true; preparing = false; enemy.Health.Invulnerable = true;
             PlayerController player = game.Player;
+            bool playerProtected = player != null && player.Health.Invulnerable;
+            bool playerLocked = player != null && player.Motor != null && player.Motor.CinematicLocked;
             float originalScale = Time.timeScale;
             Time.timeScale = 0.23f;
-            game.Hud.Announce("处决窗口 // 竖井突进终结", 2.3f);
+            game.Hud.Announce("生命耗尽 // 竖井终结演出", 2.3f);
             if (player != null && player.Motor != null)
             {
                 player.Motor.SetCinematicLocked(true);
@@ -414,11 +417,9 @@ namespace MoriEchoes
             Time.timeScale = originalScale;
             if (player != null)
             {
-                player.Health.Invulnerable = false;
-                player.Motor.SetCinematicLocked(false);
+                player.Health.Invulnerable = playerProtected;
+                player.Motor.SetCinematicLocked(playerLocked);
             }
-            enemy.Health.Invulnerable = false;
-            enemy.Health.TakeDamage(enemy.Health.Maximum, Team.Player, true);
         }
 
         public void DeathEffects()

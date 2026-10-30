@@ -628,13 +628,13 @@ namespace MoriEchoes
             if (executionStarted || enemy == null || enemy.Health == null
                 || enemy.Health.Current / Mathf.Max(1, enemy.Health.Maximum) > 0.15f) return;
             executionStarted = true;
-            ExecutionWindow = true;
-            enemy.Health.SetCurrent(enemy.Health.Maximum * 0.15f);
-            StartCoroutine(ExecuteFinisher());
+            if (enemy.Health.Current > 0) game.Hud.Announce("装甲濒毁 // 继续攻击，耗尽剩余生命", 1.6f);
         }
 
-        private IEnumerator ExecuteFinisher()
+        public IEnumerator ExecuteFinisher()
         {
+            if (enemy == null || !enemy.Health.IsDead || enemy.Health.Current > 0) yield break;
+            ExecutionWindow = true;
             executionRunning = true;
             attackActive = preparing = false;
             ClearFields();
@@ -642,11 +642,13 @@ namespace MoriEchoes
             float originalScale = Time.timeScale;
             Time.timeScale = 0.24f;
             PlayerController player = game.Player;
+            bool playerProtected = player != null && player.Health.Invulnerable;
+            bool playerLocked = player != null && player.Motor != null && player.Motor.CinematicLocked;
             if (player != null && player.Motor != null)
             {
                 player.Motor.SetCinematicLocked(true);
                 player.Health.Invulnerable = true;
-                game.Hud.Announce("處决窗口 // 终结突进", 2.2f);
+                game.Hud.Announce("生命耗尽 // 终结演出", 2.2f);
                 Vector2 origin = player.transform.position;
                 Vector2 destination = body.position + new Vector2(player.transform.position.x <= body.position.x ? -1.25f : 1.25f, -0.52f);
                 float elapsed = 0;
@@ -669,8 +671,11 @@ namespace MoriEchoes
             PlayExecutionSignature();
             yield return new WaitForSecondsRealtime(0.22f);
             Time.timeScale = originalScale;
-            enemy.Health.Invulnerable = false;
-            enemy.Health.TakeDamage(enemy.Health.Maximum, Team.Player, true);
+            if (player != null)
+            {
+                player.Health.Invulnerable = playerProtected;
+                player.Motor.SetCinematicLocked(playerLocked);
+            }
         }
 
         private void PlayExecutionSignature()

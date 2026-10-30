@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace MoriEchoes
@@ -184,11 +185,32 @@ namespace MoriEchoes
             game.Audio.Play(SoundKind.EnemyDown);
             if (Kind == EnemyKind.Boss)
             {
-                if (boss != null && boss.Side != null) boss.Side.DeathEffects();
-                if (boss != null && boss.Vertical != null) boss.Vertical.DeathEffects();
+                if (boss != null && (boss.Side != null || boss.Vertical != null))
+                {
+                    StartCoroutine(CompleteBossDefeat());
+                    return;
+                }
                 if (boss != null && boss.Swim != null) boss.Swim.DeathEffects();
                 game.Win();
             }
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+
+        private IEnumerator CompleteBossDefeat()
+        {
+            if (!Health.IsDead || Health.Current > 0) yield break;
+            if (boss.Side != null)
+            {
+                yield return boss.Side.ExecuteFinisher();
+                boss.Side.DeathEffects();
+            }
+            else
+            {
+                yield return boss.Vertical.ExecuteFinisher();
+                boss.Vertical.DeathEffects();
+            }
+            game.Win();
             gameObject.SetActive(false);
             Destroy(gameObject);
         }

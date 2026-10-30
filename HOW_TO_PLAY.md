@@ -1,6 +1,6 @@
 # 末日回响：当前版本操作说明
 
-双击 `C:\UnityProjects\MoriEchoes\PLAY_MoriEchoes.cmd`。本轮程序：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261028_171506_913\MoriEchoes.exe`。本轮没有新压缩包。打开工程使用 Unity 6000.6.7f1，入口 `Assets/Scenes/MainMenu/MainMenu.unity`；本轮 Inspector 和验收步骤见 `docs/SWIM_ART_AND_BOSS_TECHNIQUES_ACCEPTANCE.md`。
+先关闭旧版本窗口，再双击 `C:\UnityProjects\MoriEchoes\PLAY_MoriEchoes.cmd`。本轮程序：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe`。本轮没有新压缩包。打开工程使用 Unity 6000.6.7f1，入口 `Assets/Scenes/MainMenu/MainMenu.unity`；本轮 Inspector 和验收步骤见 `docs/BOSS_PURSUIT_AND_TARGETING_ACCEPTANCE.md`。
 
 主菜单选择角色、出战武器、关卡和难度，点击“部署 / 开始关卡”。共 8 人：DELTA 专注射击、VANGUARD 复苏壁垒、WRAITH 相位机动、HAVOC 爆破，新增 KALT 冷酷精准射手、VEIL 隐身射手、SERA 医师、ROOK 冲锋者。点击人物卡后，右侧常驻显示所选角色 Q/F/C 三招与 X 终结技的名称、效果说明、冷却或能量条件。战斗 HUD 继续显示名称和冷却；攻击和承伤为 X 专属终结技充能。位移遇实体墙会缩短距离，完全受阻保留冷却/能量。
 
@@ -26,6 +26,6 @@
 
 前八关每关仅有一个中段密室入口：横版在第 4 战斗段上层，竖井在中部左侧支桥。入口附近有更多守门敌兵，身体接触实体门自动进入。独立房间内挑战专属守卫，拾取芯片/胶囊；接触左侧门返回主路。奖励只发一次，重试不重刷已清密室。第九、十关没有隐藏通道。
 
-Boss 蓄力显示半透明红色危险区域，实际攻击释放前不会因预警扣血；及时离开红区或完整行进路径。十关各新增 3 招独立技能，每两次原有攻击后穿插一次，随三形态逐步解锁；名称、释放和闪避方法详见 `docs/BOSS_TECHNIQUE_DESIGN.md`。新增招式预警开始即固定落点与路线，水关原有跟踪攻击提前 1.15 秒固定落点，避免黏着。小兵与机关的旧彩色调试条、方块和倒计时不显示。平台、墙壁、电梯和密室结构均沿用所属关卡的主材质。
+Boss 蓄力显示半透明红色危险区域，实际攻击释放前不会因预警扣血；及时离开红区或完整行进路径。十关各新增 3 招独立技能，每两次原有攻击后穿插一次，随三形态逐步解锁；名称、释放和闪避方法详见 `docs/BOSS_TECHNIQUE_DESIGN.md`。Boss 会越障追击，距离拉大后先提示再高速接近。新增技能在蓄力时追踪，首个攻击前约 0.8 秒整组锁定；原有横版/竖井/水关目标打击分别提前约 0.8/0.85/0.85 秒锁定，之后可以跑跳或冲刺躲开。Boss 残血不会自动触发致命补刀，剩 1 点血也不能通关，实际最后一击归零后才播放死亡演出并结算。小兵与机关的旧彩色调试条、方块和倒计时不显示。平台、墙壁、电梯和密室结构均沿用所属关卡的主材质。
 
 敌伤为中上强度：普通敌人/机关/Boss 常规技/大招单次上限分别为基础生命的 24%/28%/36%/45%，另受角色最大生命 55% 上限约束；减伤和护盾继续降低伤害。满血不会被普通伤害一击毙命，连续受击有 0.6 秒保护，残血仍会死亡。青色 HP 立即下降，红色损失段随后逐步消退，受击有角色闪光和屏幕反馈。实际测试及限制见 `docs/FEEDBACK_AND_TRAVERSAL_ACCEPTANCE.md`。自动测试不代表真人默认难度通关、实体手柄、跨机性能或商业美术最终验收。
