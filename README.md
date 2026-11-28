@@ -36,9 +36,22 @@ Unity 6000.6.7f1 / C# / URP 2D / Input System 的离线单机横版闯关射击 
 
 ### 关卡材质与扩展内容
 
-前八关平台、墙体和升降梯按各关主材质生成，下图为 Stage 1–8 的 Player 材质对照：
+前八关平台、墙体和升降梯按各关主材质生成，下图为 Stage 1–8 的 Player 材质对照（点击图片可查看大图）：
 
-<img src="docs/preview/stage-surfaces.jpg" width="420" alt="八关场景材质运行对照">
+<p align="center">
+  <a href="docs/preview/stage-surfaces-wide.jpg">
+    <img src="docs/preview/stage-surfaces-wide.jpg" width="100%" alt="Stage 1-8 场景材质运行对照，四列两行，每关一张 Development Build 截图">
+  </a>
+</p>
+
+<details>
+<summary>查看竖版原图（2×4 排列，分辨率更高）</summary>
+
+<p align="center">
+  <img src="docs/preview/stage-surfaces.jpg" width="640" alt="八关场景材质运行对照（竖版原图）">
+</p>
+
+</details>
 
 <details>
 <summary>展开：水关美术素材总览（第九关海面 / 第十关水下，按素材索引顺序分上下两图）</summary>
@@ -68,7 +81,7 @@ Unity 6000.6.7f1 / C# / URP 2D / Input System 的离线单机横版闯关射击 
 | 敌人与打击特效 | `ArtProduction/encounter-v3/originals-preview.png` |
 | 技能光效 | `ArtProduction/skills-v1/contact-sheet.png` |
 | 新角色原画 | `ArtProduction/descent-premium-v1/review/new-roster.png` |
-| 场景材质对照 | `Validation/FeedbackTraversal_20261027_Delivery/stage-surfaces-review.jpg` |
+| 场景材质对照（横版 / 竖版） | `Validation/FeedbackTraversal_20261027_Delivery/stage-surfaces-review.jpg`，横向版由同一原图重排 |
 | 水关素材 | `Assets/Art/Production/SwimAnimeV2/review.jpg` |
 | Boss 技能素材 | `Assets/Art/Production/BossTechniquesV1/review.jpg` |
 | 十关场景与小怪 | `AnimeV1/Backgrounds/`、`PremiumV1/Backgrounds/`、`PremiumV1/Enemies/`、`SwimAnimeV2/stage-09|10/` |
