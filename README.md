@@ -1,5 +1,7 @@
 # 末日回响 / MoriEchoes
 
+**简体中文 | [English](README_EN.md)**
+
 <img src="docs/preview/game-icon.png" width="88" alt="末日回响游戏图标" align="right">
 
 Unity 6000.6.7f1 / C# / URP 2D / Input System 的离线单机横版闯关射击 Roguelite。当前实际配置为 **8 名角色、9 把武器、10 关战役**。前五关横向推进，第六至八关沿既有 Ascent 规则向上推进，第九关海面游泳，第十关水下浮沉；早期向下推进资料保留为历史设计。
@@ -127,6 +129,7 @@ Unity 6000.6.7f1 / C# / URP 2D / Input System 的离线单机横版闯关射击 
 - Boss 追加 16 张设计原图：`output/imagegen/boss-ascension-v2`；96 个实体部件 / 32 个大招帧 / 96 张法线：`Assets/Art/Production/BossAscensionV2`。防御及验收：`docs/BOSS_ASCENSION_ACCEPTANCE.md`。
 - 提示词与美术预览：`ArtProduction/descent-premium-v1/prompts`、`review`。
 - 进度：`docs/PROGRESS.md`；当前竖井规格：`docs/ASCENT_LEVELS_DESIGN.md`。
+- 仓库曝光设置（Topics / 描述）：`docs/STAR_GROWTH/01-topics-and-description.md`；Release 发布指南：`docs/STAR_GROWTH/02-github-release-guide.md`；推广文案：`docs/STAR_GROWTH/03-promotion-kit.md`。
 
 ## 玩法与系统
 
