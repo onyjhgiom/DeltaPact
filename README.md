@@ -2,6 +2,18 @@
 
 Unity 6000.6.7f1 / C# / URP 2D / Input System 的离线单机横版闯关射击 Roguelite。当前实际配置为 **8 名角色、9 把武器、10 关战役**。前五关横向推进，第六至八关沿既有 Ascent 规则向上推进，第九关海面游泳，第十关水下浮沉；早期向下推进资料保留为历史设计。
 
+## 画面预览
+
+| 角色、Boss 与武器素材总览 | 八关 Boss 实体换装与终极特效 |
+|---|---|
+| <img src="docs/preview/arsenal-overview.png" width="460" alt="角色与武器素材总览"> | <img src="docs/preview/boss-ascension.png" width="460" alt="Boss 实体换装与终极特效"> |
+
+| Windows Player 实际运行画面（城市废墟 / 寒峰隧道 / 星坠核心井 / 沉没圣堂） | 角色原画与强化形态对比 |
+|---|---|
+| <img src="docs/preview/runtime-gameplay.jpg" width="460" alt="Windows Player 实际运行画面"> | <img src="docs/preview/character-power.png" width="460" alt="角色原画与强化形态对比"> |
+
+> 以上图片来自工程内 `ArtProduction/` 素材包与验收预览，均为开发版实拍或生成稿，不代表商业最终美术。完整素材索引见 [`Releases/MoriEchoes_素材库_20261120_000432`](Releases/MoriEchoes_素材库_20261120_000432)。
+
 双击 `PLAY_MoriEchoes.cmd`。本轮已验证的 Windows 构建：`Builds/Windows/MoriEchoes_20261029_173048_021/MoriEchoes.exe`。先关闭仍在运行的旧版本窗口，再启动。本轮未生成 ZIP，旧构建和旧分享包保留；它们不代表当前版本。
 
 - 操作和启动：`HOW_TO_PLAY.md`。

@@ -2,6 +2,16 @@
 
 先关闭旧版本窗口，再双击 `C:\UnityProjects\MoriEchoes\PLAY_MoriEchoes.cmd`。本轮程序：`C:\UnityProjects\MoriEchoes\Builds\Windows\MoriEchoes_20261029_173048_021\MoriEchoes.exe`。本轮没有新压缩包。打开工程使用 Unity 6000.6.7f1，入口 `Assets/Scenes/MainMenu/MainMenu.unity`；本轮 Inspector 和验收步骤见 `docs/BOSS_PURSUIT_AND_TARGETING_ACCEPTANCE.md`。
 
+## 画面速览
+
+实际 Windows Player 运行画面（城市废墟 / 寒峰隧道 / 星坠核心井 / 沉没圣堂）：
+
+<img src="docs/preview/runtime-gameplay.jpg" width="760" alt="Windows Player 实际运行画面">
+
+角色原画与强化形态对比（DELTA / VANGUARD / WRAITH / HAVOC）：
+
+<img src="docs/preview/character-power.png" width="620" alt="角色原画与强化形态对比">
+
 主菜单选择角色、出战武器、关卡和难度，点击“部署 / 开始关卡”。共 8 人：DELTA 专注射击、VANGUARD 复苏壁垒、WRAITH 相位机动、HAVOC 爆破，新增 KALT 冷酷精准射手、VEIL 隐身射手、SERA 医师、ROOK 冲锋者。点击人物卡后，右侧常驻显示所选角色 Q/F/C 三招与 X 终结技的名称、效果说明、冷却或能量条件。战斗 HUD 继续显示名称和冷却；攻击和承伤为 X 专属终结技充能。位移遇实体墙会缩短距离，完全受阻保留冷却/能量。
 
 | 操作 | 键鼠 |
