@@ -1,10 +1,10 @@
 # GitHub 仓库曝光设置：Topics 与双语描述
 
-> 当前仓库 `onyjhgiom/DeltaPact` 的 Topics 只有 `game`，描述为中文。GitHub 站内搜索与推荐很大程度依赖 Topics 和可双语理解的描述。本文件给出可直接复制的清单，需在 GitHub 网页设置（当前环境无 API token，无法代改）。
+> **状态：已通过 GitHub API 写入并核对生效（2026-11-28）。** Topics 15 个、中英双语描述、homepage 均已设置；下方清单保留作为记录与后续修改依据。
 >
-> 位置：仓库主页 → 右侧 About 齿轮 ⚙ → 编辑描述与 Topics；或 `Settings → General`。
+> GitHub 站内搜索与推荐很大程度依赖 Topics 和可双语理解的描述。以后要改：仓库主页 → 右侧 About 齿轮 ⚙ → 编辑描述与 Topics；或 `Settings → General`。
 
-## 一、Topics（建议 15 个，直接逐个粘贴）
+## 一、Topics（15 个，已写入）
 
 ```
 unity
@@ -40,13 +40,13 @@ game-art
 三角洲契约 DELTA PACT —— 基于 Unity 的 2D 横版动作射击游戏。10 大战役涵盖横版闯关、竖版攀爬、海面游泳与水下作战，含 Boss 招式美术与波次战斗。
 ```
 
-**英文（建议新增，放在中文描述之后，用 ` | ` 分隔）：**
+**英文（已追加到中文描述之后，用 ` | ` 分隔）：**
 
 ```
 Unity 2D side-scrolling shooter roguelite. 10 stages: side-scrolling, shaft climbing, surface swimming and underwater combat. 8 characters, 9 weapons, 3-phase bosses with 30 unique skills. Windows x64 offline demo available.
 ```
 
-中英合并后的完整一行（直接复制）：
+中英合并后的完整一行（已生效，228 字符，在 350 字符限制内）：
 
 ```
 三角洲契约 DELTA PACT —— 基于 Unity 的 2D 横版动作射击游戏。10 大战役涵盖横版闯关、竖版攀爬、海面游泳与水下作战，含 Boss 招式美术与波次战斗。 | Unity 2D side-scrolling shooter roguelite with 10 stages, 8 characters, 9 weapons and 3-phase bosses. Windows x64 offline demo available.
@@ -56,10 +56,7 @@ Unity 2D side-scrolling shooter roguelite. 10 stages: side-scrolling, shaft clim
 
 ## 三、Website（About 里的 homepage 字段）
 
-当前为空。建议填一个能直接看到成果的链接，二选一：
-
-- `https://github.com/onyjhgiom/DeltaPact`（仓库本身，最保守）
-- 若后续做了 GitHub Pages 展示页，换成 Pages 地址
+当前已填 `https://github.com/onyjhgiom/DeltaPact`（仓库本身）。若后续做了 GitHub Pages 展示页，可换成 Pages 地址。
 
 ## 四、做完这一步之后
 
